@@ -1,0 +1,13 @@
+extends ../layout
+block content
+    form(method='post' action='/add-projects')
+        .input-container
+            input(type='text', name='project-name', placeholder='project-name')
+        .input-container
+            input(type='text', name='project-description' placeholder='project-description')
+        .input-container
+            input(type='text', name='project-img' placeholder='project-img')
+        .input-container
+            input(type='text', name='project-link' placeholder='project-link')
+        button(type='submit') Save
+        button(type='reset') Reset

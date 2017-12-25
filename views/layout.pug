@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title Admin Panel
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+
+    -nav = ['Users','Projects','Blog'];
+
+    ul
+        each item in nav
+            li
+                a(href=item)=item
+
+    block content
+
+
+    script(src="/javascripts/index.js").

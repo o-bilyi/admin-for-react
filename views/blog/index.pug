@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+    form(method='post' action='/add-post')
+        .input-container
+            input(type='text', name='post-name', placeholder='post-name')
+        .input-container
+            input(type='text', name='post-description' placeholder='post-description')
+        .input-container
+            input(type='text', name='post-img' placeholder='post-img')
+        .input-container
+            input(type='text', name='post-link' placeholder='post-link')
+        button(type='submit') Save
+        button(type='reset') Reset
+
+    table.post-container
+        each post in posts
+            tr
+                td=post["post-name"]
+                td=post["post-position"]
+                td=post["post-description"]
+                td=post["post-facebook"]
+                td=post["post-instagram"]

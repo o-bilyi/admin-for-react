@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+    form(method='post' action='/add-users')
+        .input-container
+            input(type='text', name='user-name', placeholder='user-name')
+        .input-container
+            input(type='text', name='user-position', placeholder='user-position')
+        .input-container
+            input(type='text', name='user-description' placeholder='user-description')
+        .input-container
+            input(type='text', name='user-facebook' placeholder='user-facebook')
+        .input-container
+            input(type='text', name='user-instagram' placeholder='user-instagram')
+        button(type='submit') Save
+        button(type='reset') Reset
+
+    table.user-container
+        each user in users
+            tr
+                td=user["user-name"]
+                td=user["user-position"]
+                td=user["user-description"]
+                td=user["user-facebook"]
+                td=user["user-instagram"]
