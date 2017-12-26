@@ -1,4 +1,6 @@
 const express = require('express');
+var multipart = require('connect-multiparty');
+var multipartMiddleware = multipart({ uploadDir: './uploads' });
 
 const router = express.Router();
 const db     = require('./dataBase');
@@ -19,8 +21,13 @@ router.post('/add-users', function(req, res) {
  db.setUsers(req.body).then(() => res.redirect("/users"))
 });
 
-router.post('/add-projects', function(req, res) {
-  db.setProject(req.body).then(() => res.redirect("/projects"))
+router.post('/add-projects', multipartMiddleware, function(req, res) {
+  if(req.files) {
+    console.log(req.files.projectImg);
+    db.setProject(req.body).then(() => res.redirect("/projects"))
+  }else {
+    return false
+  }
 });
 
 router.post('/add-post', function(req, res) {
