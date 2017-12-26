@@ -1,23 +1,30 @@
 const express = require('express');
-const jsonfile = require('jsonfile');
+
 const router = express.Router();
-const usersFile = 'views/users/users.json';
-const postsFile = 'views/blog/posts.json';
-const projectsFile = 'views/projects/projects.json';
+const db     = require('./dataBase');
 
-let users = jsonfile.readFileSync(usersFile);
-let posts = jsonfile.readFileSync(postsFile);
-let projects = jsonfile.readFileSync(projectsFile);
-
-/* GET home page. */
 router.route('/users').get(function (req, res) {
-    res.send(users);
+    res.send(db.getUsers());
 });
+
 router.route('/posts').get(function (req, res) {
-    res.send(posts);
+    res.send(db.getPosts());
 });
+
 router.route('/projects').get(function (req, res) {
-    res.send(projects);
+    res.send(db.getProject());
+});
+
+router.post('/add-users', function(req, res) {
+ db.setUsers(req.body).then(() => res.redirect("/users"))
+});
+
+router.post('/projects', function(req, res) {
+  db.setProject(req.body).then(() => res.redirect("/projects"))
+});
+
+router.post('/add-post', function(req, res) {
+  db.setPosts(req.body).then(() => res.redirect("/blog"))
 });
 
 module.exports = router;

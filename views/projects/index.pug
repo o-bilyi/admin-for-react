@@ -1,6 +1,6 @@
 extends ../layout
 block content
-    form(method='post' action='/add-projects')
+    form(method='post' action='/api/add-projects')
         .input-container
             input(type='text', name='project-name', placeholder='project-name')
         .input-container
@@ -11,3 +11,11 @@ block content
             input(type='text', name='project-link' placeholder='project-link')
         button(type='submit') Save
         button(type='reset') Reset
+
+    table.projects-container
+        each project in projects
+            tr
+                td=project["project-name"]
+                td=project["project-description"]
+                td=project["project-img"]
+                td=project["project-link"]

@@ -1,3 +1,9 @@
 [
-
+  {
+    "user-name": "Alex",
+    "user-position": "Front end Developer",
+    "user-description": "description",
+    "user-facebook": "facebook",
+    "user-instagram": "instagram"
+  }
 ]

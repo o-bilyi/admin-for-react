@@ -1,7 +1,7 @@
 extends ../layout
 
 block content
-    form(method='post' action='/add-post')
+    form(method='post' action='/api/add-post')
         .input-container
             input(type='text', name='post-name', placeholder='post-name')
         .input-container
@@ -17,7 +17,6 @@ block content
         each post in posts
             tr
                 td=post["post-name"]
-                td=post["post-position"]
                 td=post["post-description"]
-                td=post["post-facebook"]
-                td=post["post-instagram"]
+                td=post["post-img"]
+                td=post["post-link"]
