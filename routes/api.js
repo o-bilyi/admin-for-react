@@ -19,7 +19,7 @@ router.post('/add-users', function(req, res) {
  db.setUsers(req.body).then(() => res.redirect("/users"))
 });
 
-router.post('/projects', function(req, res) {
+router.post('/add-projects', function(req, res) {
   db.setProject(req.body).then(() => res.redirect("/projects"))
 });
 
