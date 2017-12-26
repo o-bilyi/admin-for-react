@@ -7,9 +7,9 @@ const usersFile = 'views/users/users.json';
 const postsFile = 'views/blog/posts.json';
 const projectsFile = 'views/projects/projects.json';
 
-let users = jsonfile.readFileSync(usersFile);
-let posts = jsonfile.readFileSync(postsFile);
-let projects = jsonfile.readFileSync(projectsFile);
+let users = jsonFile.readFileSync(usersFile);
+let posts = jsonFile.readFileSync(postsFile);
+let projects = jsonFile.readFileSync(projectsFile);
 
 /* GET home page. */
 router.route('/').get(function (req, res) {
