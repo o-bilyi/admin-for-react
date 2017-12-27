@@ -27,16 +27,10 @@ const setProject = data => setData("projects", data);
 const setPosts = data => setData("posts", data);
 const setUsers = data => setData("users", data);
 
-const getProject = () => allData.projects;
-const getPosts = () => allData.posts;
-const getUsers = () => allData.users;
-
 module.exports = {
   setProject,
   setPosts,
   setUsers,
-  getPosts,
-  getProject,
-  getUsers
+  allData
 };
 

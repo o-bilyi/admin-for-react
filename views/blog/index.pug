@@ -1,15 +1,15 @@
 extends ../layout
 
 block content
-    form(method='post' action='/api/add-post')
+    form(method='post' enctype="multipart/form-data" action='/api/add-post')
         .input-container
             input(type='text', name='post-name', placeholder='post-name')
         .input-container
             input(type='text', name='post-description' placeholder='post-description')
         .input-container
-            input(type='text', name='post-img' placeholder='post-img')
-        .input-container
             input(type='text', name='post-link' placeholder='post-link')
+        .input-container
+            input(type='file', name='image' placeholder='project-img')
         button(type='submit') Save
         button(type='reset') Reset
 
@@ -18,5 +18,7 @@ block content
             tr
                 td=post["post-name"]
                 td=post["post-description"]
-                td=post["post-img"]
                 td=post["post-link"]
+                td=post["image"]
+
+    div=errors
