@@ -5,5 +5,21 @@
     "user-description": "description",
     "user-facebook": "facebook",
     "user-instagram": "instagram"
+  },
+  {
+    "user-name": "Bob",
+    "user-position": "Beck-end",
+    "user-description": "bob is back ender",
+    "user-facebook": "facebook",
+    "user-instagram": "instagram",
+    "image": "1514382265235-maxresdefault.jpg"
+  },
+  {
+    "user-name": "Alex",
+    "user-position": "Front-end",
+    "user-description": "hello",
+    "user-facebook": "facebook",
+    "user-instagram": "instagram",
+    "image": "1514382864549-me.jpg"
   }
 ]
