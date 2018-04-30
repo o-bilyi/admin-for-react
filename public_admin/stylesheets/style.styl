@@ -1,0 +1,21 @@
+*
+  padding 0
+  margin 0
+
+$rootUnitSize = 14px
+
+html
+  font-size $rootUnitSize
+body
+  padding: 50px
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+a
+  color: #00B7FF
+
+pxToRem(pixels, context = $rootUnitSize)
+  return unit(pixels / context, 'rem')
+
+pxToRemMobile(pixels)
+  return pxToRem(pixels, $rootSmartPhoneUnitSize)
+li
+  list-style none
