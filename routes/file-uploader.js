@@ -1,5 +1,5 @@
-const formidable = require('formidable');
-const fs         = require('fs');
+const formidable = require("formidable");
+const fs         = require("fs");
 
 /**
  * uploadFile
@@ -12,27 +12,29 @@ function uploadFile(req) {
 
     const form = new formidable.IncomingForm();
 
-    form.uploadDir = './public/uploads-image';
+    form.uploadDir = "./public_admin/uploads-image";
 
     form
-    .on('error', function(err) {
+    .on("error", function(err) {
       console.warn(err);
       rej(err);
     })
 
-    .on('file', function(field, file) {
+    .on("file", function(field, file) {
       const filename = new Date().getTime() + "-" + file.name;
       fieldForm.image = filename;
-      fs.renameSync(file.path, form.uploadDir + '/' + filename);
+      // fieldForm.imagePreview = filename;
+      fs.renameSync(file.path, form.uploadDir + "/" + filename);
     })
 
-    .on('field', function(field, value) {
+    .on("field", function(field, value) {
+      fieldForm.id = new Date().getTime();
       fieldForm[field] = value;
     })
 
-    .on('end', function() {
+    .on("end", function() {
       resolve(fieldForm);
-      console.log('-> upload done');
+      console.log("-> upload done");
     })
 
     .parse(req);

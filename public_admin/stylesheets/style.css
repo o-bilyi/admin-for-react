@@ -12,6 +12,84 @@ body {
 a {
   color: #00b7ff;
 }
+.global-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.global-menu .menu-item {
+  margin-right: 5px;
+}
 li {
   list-style: none;
+}
+form {
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+form .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .button-container {
+  margin-top: 25px;
+  display: flex;
+}
+form input,
+form button,
+form textarea {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+form input[type="text"] {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 10px;
+  text-transform: capitalize;
+  width: 100%;
+  box-sizing: border-box;
+}
+form input[type="file"] {
+  align-self: flex-end;
+}
+form .input-container {
+  width: 48%;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+form button[type="submit"] {
+  background-color: #488011;
+  font-size: 16px;
+  width: 80px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 15px;
+}
+form button[type="reset"] {
+  margin-right: 15px;
+}
+form button[type="reset"],
+form button[type="delete"] {
+  background-color: #f00;
+  font-size: 16px;
+  width: 80px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+img {
+  max-width: 100%;
+}
+table {
+  width: 100%;
+  max-width: 500px;
+  table-layout: fixed;
 }

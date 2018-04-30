@@ -12,10 +12,81 @@ body
 a
   color: #00B7FF
 
-pxToRem(pixels, context = $rootUnitSize)
-  return unit(pixels / context, 'rem')
+.global-menu
+  display flex
+  align-items center
+  margin-bottom 15px
 
-pxToRemMobile(pixels)
-  return pxToRem(pixels, $rootSmartPhoneUnitSize)
+  .menu-item
+    margin-right 5px
+
 li
   list-style none
+
+form
+  max-width 500px
+  margin-bottom 25px
+
+  .flex-container
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+
+  .button-container
+    margin-top 25px
+    display flex
+
+  input,button,textarea
+    border none
+    background transparent
+    cursor pointer
+    outline none
+
+  input[type="text"]
+    border-bottom 1px solid #ddd
+    padding 10px 10px
+    text-transform capitalize
+    width 100%
+    box-sizing border-box
+
+  input[type="file"]
+    align-self flex-end
+
+  .input-container
+    width 48%
+    margin-bottom 5px
+    display flex
+    align-items center
+
+  button[type="submit"]
+    background-color #488011
+    font-size 16px
+    width 80px
+    height 20px
+    display flex
+    align-items center
+    justify-content center
+    color #fff
+    margin-right 15px
+
+  button[type="reset"]
+    margin-right 15px
+
+  button[type="reset"],
+  button[type="delete"]
+    background-color red
+    font-size 16px
+    width 80px
+    height 20px
+    display flex
+    align-items center
+    justify-content center
+    color #fff
+
+img
+  max-width 100%
+
+table
+  width 100%
+  max-width 500px
+  table-layout fixed

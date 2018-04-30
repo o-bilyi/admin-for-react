@@ -1,48 +1,64 @@
-const express  = require('express');
-const router   = express.Router();
-const db       = require('./dataBase');
-const uploader = require('./file-uploader');
+const express = require("express");
+const router = express.Router();
+const db = require("./dataBase");
+const uploader = require("./file-uploader");
 
-router.route('/users').get(function (req, res) {
-    res.send(db.allData.users);
-});
+router.route("/users")
+    .get(function (req, res) {
+        res.send(db.allData.users);
+    })
+    .post((req, res) => {
+        uploader(req).then(result => {
+            db.setUsers(result);
+            res.redirect("/users");
+        }).catch(e => {
+            console.warn(e);
+            res.redirect("/users", {errors: "some error"});
+        });
+    })
+    .delete((req, res) => {
+        db.changeUsers(req.body);
+        res.redirect("/users");
+    });
 
-router.route('/posts').get(function (req, res) {
-    res.send(db.allData.posts);
-});
+router.route("/projects")
+    .get((req, res) => {
+        res.send(db.allData.projects);
+    })
+    .post((req, res) => {
+        uploader(req).then(result => {
+            db.setProject(result);
+            res.redirect("/projects");
+        }).catch(e => {
+            console.warn(e);
+            res.redirect("/projects", {errors: "some error"});
+        });
+    })
 
-router.route('/projects').get(function (req, res) {
-    res.send(db.allData.projects);
-});
+    .delete((req, res) => {
+        db.changeProjects(req.body);
+        res.redirect("/projects");
+    });
 
-router.post('/add-users', function(req, res) {
-  uploader(req).then(result => {
-    db.setUsers(result);
-    res.redirect('/users');
-  }).catch(e => {
-    console.warn(e);
-    res.redirect('/users', {errors: 'some error'});
-  });
-});
+router.route("/posts")
 
-router.post('/add-projects', function(req, res) {
-  uploader(req).then(result => {
-    db.setProject(result);
-    res.redirect('/projects');
-  }).catch(e => {
-    console.warn(e);
-    res.redirect('/projects', {errors: 'some error'});
-  });
-});
+    .get((req, res) => {
+        res.send(db.allData.posts);
+    })
 
-router.post('/add-post', function(req, res) {
-  uploader(req).then(result => {
-    db.setPosts(result);
-    res.redirect('/blog');
-  }).catch(e => {
-    console.warn(e);
-    res.redirect('/blog', {errors: 'some error'});
-  });
-});
+    .post((req, res) => {
+        uploader(req).then(result => {
+            db.setPosts(result);
+            res.redirect("/blog");
+        }).catch(e => {
+            console.warn(e);
+            res.redirect("/blog", {errors: "some error"});
+        });
+    })
+
+    .delete((req, res) => {
+        db.changePosts(req.body);
+        res.redirect("/blog");
+    });
 
 module.exports = router;

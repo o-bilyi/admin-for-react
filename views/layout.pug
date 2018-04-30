@@ -2,14 +2,14 @@ doctype html
 html
     head
         title Admin Panel
-        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel="stylesheet", href="/stylesheets/style.css")
     body
 
-    -nav = ['Users','Projects','Blog'];
+    -nav = ["Users","Projects","Blog"];
 
-    ul
+    ul.global-menu
         each item in nav
-            li
+            li.menu-item
                 a(href=item)=item
 
     block content

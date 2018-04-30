@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Front</title>
+    <script>
+        fetch("/api/projects")
+            .then(res => {
+                return(res.json())
+            })
+            .then(users => {
+                console.warn(users);
+            })
+    </script>
 </head>
 <body>
-$END$
+Front page
 </body>
 </html>

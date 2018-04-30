@@ -1,21 +1,23 @@
 extends ../layout
 
 block content
-    form(method='post' enctype="multipart/form-data" action='/api/add-users')
-        .input-container
-            input(type='text', name='user-name', placeholder='user-name')
-        .input-container
-            input(type='text', name='user-position', placeholder='user-position')
-        .input-container
-            input(type='text', name='user-description' placeholder='user-description')
-        .input-container
-            input(type='text', name='user-facebook' placeholder='user-facebook')
-        .input-container
-            input(type='text', name='user-instagram' placeholder='user-instagram')
-        .input-container
-            input(type='file', name='image' placeholder='project-img')
-        button(type='submit') Save
-        button(type='reset') Reset
+    form(method="post" enctype="multipart/form-data" action="/api/users")
+        .flex-container
+            .input-container
+                input(type="text", name="user-name", placeholder="name")
+            .input-container
+                input(type="text", name="user-position", placeholder="position")
+            .input-container
+                input(type="text", name="user-description" placeholder="description")
+            .input-container
+                input(type="text", name="user-facebook" placeholder="facebook")
+            .input-container
+                input(type="text", name="user-instagram" placeholder="instagram")
+            .input-container
+                input(type="file", name="image" placeholder="project-img")
+        .button-container
+            button(type="submit") Save
+            button(type="reset") Reset
 
     table.user-container
         each user in users
@@ -25,7 +27,8 @@ block content
                 td=user["user-description"]
                 td=user["user-facebook"]
                 td=user["user-instagram"]
-                td=user["image"]
+                td
+                    img(src=`uploads-image/${user["image"]}`)
 
     div=errors
 
