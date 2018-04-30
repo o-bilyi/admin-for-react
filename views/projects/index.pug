@@ -24,6 +24,10 @@ block content
                 td=project["projectImg"]
                 td=project["project-link"]
                 td
-                    img(src=`uploads-image/${project["image"]}`)
+                    img(src=`uploads-image/${project["project-img"]}`)
+                td
+                    img(src=`uploads-image/${project[ "project-preview-img" ]}`)
+                td
+                    button(type="delete", data-id=project.id).delete-element Delete
 
     div=errors

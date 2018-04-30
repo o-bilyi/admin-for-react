@@ -14,7 +14,7 @@ block content
             .input-container
                 input(type="text", name="user-instagram" placeholder="instagram")
             .input-container
-                input(type="file", name="image" placeholder="project-img")
+                input(type="file", name="user-img" placeholder="user-img")
         .button-container
             button(type="submit") Save
             button(type="reset") Reset
@@ -28,7 +28,9 @@ block content
                 td=user["user-facebook"]
                 td=user["user-instagram"]
                 td
-                    img(src=`uploads-image/${user["image"]}`)
+                    img(src=`uploads-image/${user["user-img"]}`)
+                td
+                    button(type="delete", data-id=user.id).delete-element Delete
 
     div=errors
 

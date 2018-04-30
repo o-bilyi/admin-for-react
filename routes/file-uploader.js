@@ -22,8 +22,7 @@ function uploadFile(req) {
 
     .on("file", function(field, file) {
       const filename = new Date().getTime() + "-" + file.name;
-      fieldForm.image = filename;
-      // fieldForm.imagePreview = filename;
+      fieldForm[field] = filename;
       fs.renameSync(file.path, form.uploadDir + "/" + filename);
     })
 

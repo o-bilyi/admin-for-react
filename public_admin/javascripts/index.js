@@ -18,17 +18,18 @@ deleteElement.forEach((item) => {
 
         fetch("/api/posts",{
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                "Accept": "application/json",
+                "Content-Type": "application/json"
             },
-            method: 'delete',
+            method: "delete",
             body : JSON.stringify(posts),
         })
         .then(function (data) {
-            console.log('Request success: ', data);
+            console.log("Request success: ", data);
+            location.reload();
         })
         .catch(function (error) {
-            console.log('Request failure: ', error);
+            console.log("Request failure: ", error);
         });
     };
 });

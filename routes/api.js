@@ -57,8 +57,7 @@ router.route("/posts")
     })
 
     .delete((req, res) => {
-        db.changePosts(req.body);
-        res.redirect("/blog");
+        db.changePosts(req.body).then(() => res.send("ok"));
     });
 
 module.exports = router;

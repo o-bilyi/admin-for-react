@@ -2,7 +2,7 @@ const express = require("express");
 const router  = express.Router();
 const db      = require("./dataBase");
 
-router.route("/admin/").get((req, res) => {
+router.route("/admin").get((req, res) => {
   res.render("index");
 });
 
