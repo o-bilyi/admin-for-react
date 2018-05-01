@@ -17,8 +17,9 @@ router.route("/users")
         });
     })
     .delete((req, res) => {
-        db.changeUsers(req.body);
-        res.redirect("/users");
+        console.warn(req.body, "users");
+        db.changeUsers(req.body)
+            .then(() => res.send("ok"));
     });
 
 router.route("/projects")
@@ -34,18 +35,16 @@ router.route("/projects")
             res.redirect("/projects", {errors: "some error"});
         });
     })
-
     .delete((req, res) => {
-        db.changeProjects(req.body);
-        res.redirect("/projects");
+        console.warn(req.body, "projects")
+        db.changeProjects(req.body)
+            .then(() => res.send("ok"));
     });
 
 router.route("/posts")
-
     .get((req, res) => {
         res.send(db.allData.posts);
     })
-
     .post((req, res) => {
         uploader(req).then(result => {
             db.setPosts(result);
@@ -55,9 +54,10 @@ router.route("/posts")
             res.redirect("/blog", {errors: "some error"});
         });
     })
-
     .delete((req, res) => {
-        db.changePosts(req.body).then(() => res.send("ok"));
+        console.warn(req.body, "posts")
+        db.changePosts(req.body)
+            .then(() => res.send("ok"));
     });
 
 module.exports = router;

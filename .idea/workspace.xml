@@ -4,20 +4,45 @@
     <list default="true" id="cc52367b-1ef7-48e0-8c35-359e92c8c383" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_admin/javascripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_admin/javascripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524807697942-favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524831927029-" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524832485721-Screenshot_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524903320383-andriy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524915810087-my-photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524922260083-my-photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524922304938-my-photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524923617578-my-photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524924356485-andriy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524924501082-andriy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524990912097-my-photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524990912102-andriy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524991408755-photo_2018-04-29_11-22-35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524991408758-Screenshot_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524991712522-photo_2018-04-29_11-22-35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524992397888-Screenshot_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524992600779-photo_2018-04-29_11-22-35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1524992918339-Screenshot_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525078555035-samsung-galaxy-apps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525078555039-eg-logo-l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525078696487-project-img-vs-friends.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525078696491-project-preview-img-mobile-phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525078916135-eg-logo-l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525079404887-howItWorksBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525080634727-howItWorksBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525083511897-eg-logo-l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525083511905-howItWorksBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525083759002-howItWorksBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_admin/uploads-image/1525083759008-mobile-phone.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/file-uploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/file-uploader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/dataBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dataBase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/blog/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/blog/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog/posts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/projects/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/projects/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/projects/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/projects/projects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/users/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/users.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,23 +55,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57853246">
+    <splitter split-orientation="horizontal" split-proportion="0.19471948">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/users/index.pug">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public_admin/javascripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="users.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/views/users/users.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="10" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="10" />
+                <state relative-caret-position="183">
+                  <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#86#146#0" />
+                    <element signature="e#196#230#0" />
+                    <element signature="e#259#299#0" />
+                    <element signature="e#339#373#0" />
+                    <element signature="e#402#442#0" />
+                    <element signature="e#485#519#0" />
+                    <element signature="e#548#591#0" />
+                    <element signature="e#992#1104#0" />
+                    <element signature="e#1360#1424#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -54,8 +81,8 @@
           <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/blog/index.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="31" selection-end-column="80" />
+                <state relative-caret-position="124">
+                  <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
@@ -63,65 +90,17 @@
           <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/projects/index.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+                <state relative-caret-position="361">
+                  <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public_admin/javascripts/index.js">
+          <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/users/index.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="64" selection-start-column="50" selection-end-column="64" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/api.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-364">
-                  <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-                  <folding>
-                    <element signature="e#736#984#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="file-uploader.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/file-uploader.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="203">
-                  <caret line="23" selection-start-line="23" selection-end-line="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="186">
-                  <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+                <state relative-caret-position="346">
+                  <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
@@ -130,11 +109,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="projects.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/views/projects/projects.json">
+          <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/users/users.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="16" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="16" />
+                <state relative-caret-position="45">
+                  <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -142,8 +121,26 @@
           <file leaf-file-name="posts.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/blog/posts.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+                <state relative-caret-position="150">
+                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="projects.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/projects/projects.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
@@ -181,6 +178,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/views/blog/index.pug" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/views/projects/index.pug" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/views/users/index.pug" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/routes/api.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -190,7 +190,6 @@
         <option value="$PROJECT_DIR$/views/blog.pug" />
         <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/routes/projects.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.styl" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/views/index.pug" />
@@ -211,6 +210,7 @@
         <option value="$PROJECT_DIR$/routes/api.js" />
         <option value="$PROJECT_DIR$/views/users/index.pug" />
         <option value="$PROJECT_DIR$/views/projects/index.pug" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -254,34 +254,34 @@
         <subPane>
           <expand>
             <path>
-              <item name="admin-for-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin-for-react" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="admin-for-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin-for-react" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="public_admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="admin-for-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin-for-react" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="admin-for-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin-for-react" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="admin-for-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin-for-react" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="admin-for-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin-for-react" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -297,6 +297,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/www" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
@@ -425,31 +426,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66061000" />
+    <option name="totallyTimeSpent" value="66082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4825708" visible="true" weight="0.13119073" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4825708" visible="true" weight="0.09821428" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021075" side_tool="true" weight="0.16847827" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32934782" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49789253" visible="true" weight="0.39273927" />
       <window_info id="npm" order="2" sideWeight="0.5174292" side_tool="true" weight="0.13119073" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49789253" visible="true" weight="0.291939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2124183" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.27062705" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info id="npm" order="2" sideWeight="0.5174292" side_tool="true" weight="0.13119073" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4825708" visible="true" weight="0.13119073" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32934782" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49789253" visible="true" weight="0.291939" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.27062705" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021075" side_tool="true" weight="0.16847827" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2124183" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,13 +481,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/layout.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_admin/stylesheets/style.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -717,18 +723,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blog/posts.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/dataBase.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#721#981#0" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -755,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/projects/projects.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -774,48 +777,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/projects/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/blog/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/users/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/users/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        <state relative-caret-position="150">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <element signature="e#736#984#0" />
+            <element signature="e#204#247#0" />
+            <element signature="e#273#513#0" />
+            <element signature="e#667#713#0" />
+            <element signature="e#739#987#0" />
+            <element signature="e#1213#1451#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_admin/javascripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="64" selection-start-column="50" selection-end-column="64" />
+        <state relative-caret-position="183">
+          <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+          <folding>
+            <element signature="e#86#146#0" />
+            <element signature="e#196#230#0" />
+            <element signature="e#259#299#0" />
+            <element signature="e#339#373#0" />
+            <element signature="e#402#442#0" />
+            <element signature="e#485#519#0" />
+            <element signature="e#548#591#0" />
+            <element signature="e#992#1104#0" />
+            <element signature="e#1360#1424#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/projects/index.pug">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/blog/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="31" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>

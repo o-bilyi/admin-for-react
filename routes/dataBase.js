@@ -40,9 +40,9 @@ const setProject = data => setData("projects", data);
 const setPosts = data => setData("posts", data);
 const setUsers = data => setData("users", data);
 
-const changeProjects = data => changeData("posts", data);
-const changeUsers = data => changeData("posts", data);
+const changeProjects = data => changeData("projects", data);
 const changePosts = data => changeData("posts", data);
+const changeUsers = data => changeData("users", data);
 
 module.exports = {
     setProject,
