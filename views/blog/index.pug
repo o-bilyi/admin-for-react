@@ -10,9 +10,9 @@ block content
            .input-container
                input(type="text", name="post-link" placeholder="post link")
            .input-container
-               input(type="file", name="post-img" placeholder="post img")
+               input(type="file", name="img" placeholder="post img")
            .input-container
-               input(type="file", name="post-preview-img" placeholder="post preview img")
+               input(type="file", name="preview-img" placeholder="post preview img")
        .button-container
            button(type="submit") Save
            button(type="reset") Reset
@@ -25,9 +25,9 @@ block content
                 td=post["post-description"]
                 td=post["post-link"]
                 td
-                    img(src=`uploads-image/${post["post-img"]}`)
+                    img(src=`uploads-image/${post["img"]}`)
                 td
-                    img(src=`uploads-image/${post[ "post-preview-img" ]}`)
+                    img(src=`uploads-image/${post[ "preview-img" ]}`)
                 td
                     button(type="delete", data-name="posts" data-id=post.id).delete-element Delete
     div=errors

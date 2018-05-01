@@ -9,9 +9,9 @@ block content
             .input-container
                 input(type="text", name="project-link" placeholder="project-link")
             .input-container
-                input(type="file", name="project-img" placeholder="project-img")
+                input(type="file", name="img" placeholder="project-img")
             .input-container
-                input(type="file", name="project-preview-img" placeholder="project-img")
+                input(type="file", name="preview-img" placeholder="project-img")
         .button-container
             button(type="submit") Save
             button(type="reset") Reset
@@ -24,9 +24,9 @@ block content
                 td=project["projectImg"]
                 td=project["project-link"]
                 td
-                    img(src=`uploads-image/${project["project-img"]}`)
+                    img(src=`uploads-image/${project["img"]}`)
                 td
-                    img(src=`uploads-image/${project["project-preview-img"]}`)
+                    img(src=`uploads-image/${project["preview-img"]}`)
                 td
                     button(type="delete", data-name="projects" data-id=project.id).delete-element Delete
 
