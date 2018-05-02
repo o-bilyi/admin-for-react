@@ -26,9 +26,23 @@ const setData = (to, data) => {
 
 const removeData = (to, data) => {
     return new Promise((res, rej) => {
-			allData[to] = allData[ to ].filter(item => {
-					return item.id !== data;
-				});
+        allData[to] = allData[to].filter(item => {
+            return item.id !== data;
+        });
+        jsonFile.writeFile(fileLinks[`${to}File`], allData[to], {spaces: 2}, (err) => {
+            if (err) {
+                rej(err)
+            }
+            res(true)
+        })
+    })
+};
+
+const changeItem = (to, data) => {
+    return new Promise((res, rej) => {
+        allData[to] = allData[to].filter(item => {
+            return item.id !== data;
+        });
         jsonFile.writeFile(fileLinks[`${to}File`], allData[to], {spaces: 2}, (err) => {
             if (err) {
                 rej(err)
@@ -45,6 +59,8 @@ const setUsers = data => setData("users", data);
 const removeProject = data => removeData("projects", data);
 const removePost = data => removeData("posts", data);
 const removeUser = data => removeData("users", data);
+
+const changeUser = data => changeItem("users", data);
 
 module.exports = {
     setProject,

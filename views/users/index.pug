@@ -30,7 +30,9 @@ block content
                 td
                     img(src=`uploads-image/${user["img"]}`)
                 td
-                    button(type="delete", data-name="users" data-id=user.id).delete-element Delete
+                    button(type="delete", data-method="delete" data-api="users" data-id=user.id).delete-element Delete
+                td
+                    button(type="delete", data-method="put" data-api="users" data-id=user.id).delete-element Change
 
     div=errors
 

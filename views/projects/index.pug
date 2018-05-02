@@ -28,6 +28,8 @@ block content
                 td
                     img(src=`uploads-image/${project["preview-img"]}`)
                 td
-                    button(type="delete", data-name="projects" data-id=project.id).delete-element Delete
+                    button(type="delete", data-method="delete" data-api="projects" data-id=project.id).delete-element Delete
+                td
+                    button(type="delete", data-method="put" data-api="projects" data-id=project.id).delete-element Change
 
     div=errors

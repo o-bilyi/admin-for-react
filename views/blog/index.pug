@@ -29,6 +29,8 @@ block content
                 td
                     img(src=`uploads-image/${post[ "preview-img" ]}`)
                 td
-                    button(type="delete", data-name="posts" data-id=post.id).delete-element Delete
+                    button(type="delete", data-method="delete" data-api="posts" data-id=post.id).delete-element Delete
+                td
+                    button(type="delete", data-method="put" data-api="posts" data-id=post.id).delete-element Change
     div=errors
 

@@ -1,6 +1,6 @@
 const express = require("express");
 const router  = express.Router();
-const db      = require("./dataBase");
+const db      = require("./util/data-base");
 
 router.route("/admin").get((req, res) => {
   res.render("index");

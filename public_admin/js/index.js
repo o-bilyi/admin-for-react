@@ -1,15 +1,17 @@
 const deleteElement = document.querySelectorAll(".delete-element");
+const changeElement = document.querySelectorAll(".change-element");
 
-const DeleteElement = (evt) => {
+const DeleteElement = evt => {
 	const dataId = +evt.target.getAttribute("data-id");
-	const dataName = evt.target.getAttribute("data-name");
+	const dataApi = evt.target.getAttribute("data-api");
+	const dataMethod = evt.target.getAttribute("data-method");
 
-	fetch(`/api/${dataName}`,{
+	fetch(`/api/${dataApi}`,{
 		headers: {
 			"Accept": "application/json",
 			"Content-Type": "application/json"
 		},
-		method: "delete",
+		method: dataMethod,
 		body : dataId,
 	})
 	.then(function (data) {
@@ -22,5 +24,9 @@ const DeleteElement = (evt) => {
 };
 
 deleteElement.forEach((item) => {
+    item.onclick = DeleteElement;
+});
+
+changeElement.forEach((item) => {
     item.onclick = DeleteElement;
 });
