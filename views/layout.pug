@@ -2,17 +2,25 @@ doctype html
 html
     head
         title Admin Panel
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,500,700")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
         link(rel="stylesheet", href="/style/style.css")
     body
 
     -nav = ["Users","Projects","Blog"];
 
-    ul.global-menu
-        each item in nav
-            li.menu-item
-                a(href=item)=item
+    .wrapper
+        ul.global-menu
 
-    block content
+            li.logo-container
+                img.logo(src="./img/logo.svg")
+                p.description-logo Dashboard
+
+            each item in nav
+                li.menu-item(data-name=item)
+                    a.link-menu(href=item)=item
+
+        block content
 
 
     script(src="/js/index.js").

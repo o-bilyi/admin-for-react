@@ -1,5 +1,8 @@
 const deleteElement = document.querySelectorAll(".delete-element");
 const changeElement = document.querySelectorAll(".change-element");
+const activeItemMenu = document.querySelectorAll(".menu-item");
+const showModalFormButton = document.querySelectorAll(".show-modal-form");
+const modalForm = document.querySelector(".modal-form");
 
 const DeleteElement = evt => {
 	const dataId = +evt.target.getAttribute("data-id");
@@ -23,10 +26,23 @@ const DeleteElement = evt => {
 	});
 };
 
-deleteElement.forEach((item) => {
+deleteElement.forEach(item => {
     item.onclick = DeleteElement;
 });
 
-changeElement.forEach((item) => {
+changeElement.forEach(item => {
     item.onclick = DeleteElement;
+});
+
+activeItemMenu.forEach(item => {
+    let location = window.location.pathname.toLocaleLowerCase();
+    let thisItem = item.dataset.name.toLocaleLowerCase();
+    location = location.slice(1);
+    location === thisItem ? item.classList.add("active") : item.classList.remove("active")
+});
+
+showModalFormButton.forEach(item => {
+   item.onclick = function () {
+       modalForm.classList.toggle("active");
+   }
 });

@@ -1,38 +1,76 @@
 extends ../layout
 
 block content
-    form(method="post" enctype="multipart/form-data" action="/api/users")
-        .flex-container
-            .input-container
-                input(type="text", name="user-name", placeholder="name")
-            .input-container
-                input(type="text", name="user-position", placeholder="position")
-            .input-container
-                input(type="text", name="user-description" placeholder="description")
-            .input-container
-                input(type="text", name="user-facebook" placeholder="facebook")
-            .input-container
-                input(type="text", name="user-instagram" placeholder="instagram")
-            .input-container
-                input(type="file", name="img" placeholder="user-img")
-        .button-container
-            button(type="submit") Save
-            button(type="reset") Reset
+    .content
+        h2.title-page Team
+        .users
+            each user, index in users
+                .user-container
+                    .index=index + 1
+                    .left-container
+                        .user-image-container
+                            .user-img(style=`background-image:url(uploads-image/${user["img"]})`)
+                        .user-description-container
+                            .user-name-and-position
+                                .user-name
+                                    label(for="name") Name
+                                    input#name(type="text" readonly autocomplete="off" value=user["user-name"])
+                                .position
+                                    label(for="position") Position
+                                    input#position(type="text" readonly autocomplete="off" value=user["user-position"])
+                            .user-description
+                                label(for="description") Description
+                                textarea#description(readonly autocomplete="off")=user["user-description"]
+                    .right-container
+                        .social-links
+                            h5.title-links Social links
+                            .flex-container
+                                .facebook
+                                    .icon
+                                        i.fa.fa-facebook-f
+                                    input.social-input(type="text" name="facebook" readonly autocomplete="off"  value=user["user-facebook"])
+                                .linkedin
+                                    .icon
+                                        i.fa.fa-linkedin-in
+                                    input.social-input(type="text" name="instagram" readonly autocomplete="off"  value=user["user-instagram"])
+                                .behance
+                                    .icon
+                                        i.fa.fa-behance
+                                    input.social-input(type="text" name="behance" readonly autocomplete="off"  value=user["user-behance"])
+                                .dribbble
+                                    .icon
+                                        i.fa.fa-dribbble
+                                    input.social-input(type="text" name="dribbble" readonly autocomplete="off" value=user["user-dribbble"])
 
-    table.user-container
-        each user in users
-            tr
-                td=user["user-name"]
-                td=user["user-position"]
-                td=user["user-description"]
-                td=user["user-facebook"]
-                td=user["user-instagram"]
-                td
-                    img(src=`uploads-image/${user["img"]}`)
-                td
-                    button(type="delete", data-method="delete" data-api="users" data-id=user.id).delete-element Delete
-                td
-                    button(type="delete", data-method="put" data-api="users" data-id=user.id).delete-element Change
+                    button(type="delete", data-method="put" data-api="users" data-id=user.id).change-element
+                        span.text-button save changes
 
-    div=errors
+                    button(type="delete", data-method="delete" data-api="users" data-id=user.id).delete-element
+                        span.text-button delete user
+
+        button.add-user.show-modal-form add new
+        .modal-form
+            form(method="post" enctype="multipart/form-data" action="/api/users")
+                .flex-container
+                    .input-container
+                        input(type="text" autocomplete="off" name="user-name", placeholder="name")
+                    .input-container
+                        input(type="text" autocomplete="off" name="user-position", placeholder="position")
+                    .input-container
+                        input(type="text" autocomplete="off" name="user-description" placeholder="description")
+                    .input-container
+                        input(type="text" autocomplete="off" name="user-facebook" placeholder="facebook")
+                    .input-container
+                        input(type="text" autocomplete="off" name="user-instagram" placeholder="instagram")
+                    .input-container
+                        input(type="text" autocomplete="off" name="user-behance" placeholder="behance")
+                    .input-container
+                        input(type="text" autocomplete="off" name="user-dribbble" placeholder="dribbble")
+                    .input-container
+                        input(type="file" autocomplete="off" name="img" placeholder="user-img")
+                .button-container
+                    button.show-modal-form(type="submit") Save
+                    button(type="reset") Reset
+
+        div=errors
 
