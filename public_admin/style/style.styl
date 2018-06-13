@@ -91,7 +91,17 @@ li
   text-transform uppercase
   font-weight bold
 
-form
+.title-and-description
+  padding 0 20px 20px
+
+  .title
+    color #ddd
+    margin-bottom 10px
+
+  .description
+    color #5f5f5f
+
+.submit-form
   max-width 500px
   margin auto
 
@@ -104,7 +114,7 @@ form
     margin-top 25px
     display flex
 
-  input,button,textarea
+  input,button,.user-description-textarea
     border none
     background transparent
     cursor pointer
@@ -154,10 +164,28 @@ form
 img
   max-width 100%
 
+.index
+  display flex
+  align-items center
+  justify-content center
+  color #333333
+  font-size 36px
+  font-weight 500
+  flex-shrink 0
+  width 50px
+
+  &:after
+    content "."
+
+.user-img
+  width 140px
+  height 140px
+  background-size cover
+
 .users
   max-height 650px
   overflow-y auto
-  padding 3px 10px 3px 3px
+  padding: 3px 3px 3px 18px
   margin-bottom 40px
 
   .user-container
@@ -180,12 +208,12 @@ img
     font-weight 500
     font-size 12px
 
-  textarea
+  .user-description-textarea
     max-height 115px
     min-height 115px
 
   input,
-  textarea
+  .user-description-textarea
     color #595959
     background-color transparent
     border none
@@ -203,20 +231,8 @@ img
   .right-container,
   .save-change,
   .delete-element,
-  .index
+  .button-container
     flex-grow 1
-
-  .index
-    display flex
-    align-items center
-    justify-content center
-    max-width 55px
-    color #333333
-    font-size 36px
-    font-weight 500
-
-    &:after
-      content "."
 
   .right-container
     background-color #333333
@@ -224,40 +240,47 @@ img
     box-sizing border-box
     max-width 480px
 
+  .button-container
+    margin-left 1%
+    display flex
+    flex-direction column
+    min-width 125px
+
   .change-element
-    background #333333 url("../img/save-icon.svg") no-repeat center
-    background-size 54px
+    background-image url("../img/save-icon.svg")
+    margin-bottom 2%
 
   .delete-element
-    background #333333 url("../img/remove-icon.svg") no-repeat center
-    background-size 54px
+    background-image url("../img/remove-icon.svg")
 
   .change-element,
   .delete-element
+    background-position center 50%
+    background-size 35px
+    background-color #333333
+    background-repeat no-repeat
     border none
     cursor pointer
     outline none
-    margin-left 1%
-    max-width 150px
-    width 100%
     display flex
     align-items center
     justify-content center
     flex-direction column-reverse
+    padding-top 50%
+    font-size 12px
+    text-transform uppercase
+    font-weight bold
+    color #5f5f5f
+    height 50%
 
-    .text-button
-      padding-top 100px
-      font-size 12px
-      text-transform uppercase
-      font-weight bold
-      color #5f5f5f
 
   .left-container
     background-color #363636
     display flex
+    min-width 400px
 
     input,
-    textarea
+    .user-description-textarea
       border-bottom 1px solid #595959
       padding-bottom 10px
       transition-duration .3s
@@ -273,12 +296,8 @@ img
     display flex
     align-items center
     justify-content center
+    flex-direction column
     flex-shrink 0
-
-  .user-img
-    width 140px
-    height 140px
-    background-size cover
 
   .user-description-container
     padding 30px
@@ -363,16 +382,186 @@ img
 
 .modal-form
   position fixed
-  bottom 10px
+  top 50%
   left 0
   right 0
   transition transform .3s
-  transform translateY(110%)
+  transform translateY(300%)
+  max-width 500px
+  margin auto
 
   &.active
-    transform translateY(0)
+    transform translateY(-50%)
 
   form
     box-shadow 0 0 7px 0 rgba(109,109,109,0.6)
     padding 15px
     background-color #363636
+
+  .close-modal
+    position absolute
+    right 0
+    top 0
+    cursor pointer
+
+.projects
+  max-width 1150px
+  margin auto
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+
+  .search-container
+    width 100%
+    margin-bottom 60px
+
+  .search
+    width 100%
+    max-width 260px
+
+.project-container
+  max-width 530px
+  display flex
+  justify-content space-between
+
+  .left-container
+    max-width 240px
+    //height 240px
+    padding 35px
+    background-color #333333
+
+  .project-preview-image
+    margin-top 10px
+
+
+@media all and (max-width: 1800px)
+  .global-menu
+    width 180px
+
+  .users
+    .facebook,
+    .linkedin,
+    .behance,
+    .dribbble
+      max-width 100%
+      width 100%
+
+    .user-description-container
+      flex-direction column
+
+    .user-name-and-position
+      padding-right 0
+      margin-bottom 20px
+
+    .user-name
+      margin-bottom 20px
+
+    .user-description-textarea
+      min-height 95px
+
+    .right-container,
+    .user-description-container
+      padding 30px 15px
+
+@media all and (max-width: 1200px)
+  .wrapper
+    padding 100px 10px 0 0
+
+  .content
+    padding 10px 15px 15px 0
+
+  .users
+    margin-bottom 15px
+    .user-container
+      flex-wrap wrap
+
+    .left-container
+      width 90%
+
+    .left-container,
+    .button-container
+      min-width auto
+
+    .right-container
+      margin-left 50px
+
+    .button-container,
+    .right-container
+      margin-top 1%
+
+    .change-element,
+    .delete-element
+      background-position center 15px
+      height 50%
+      padding-top 50px
+      min-height 100px
+
+@media all and (max-width: 950px)
+  .global-menu
+    width 110px
+
+  .title-page
+    font-size 65px
+    text-transform uppercase
+    font-weight bold
+    position absolute
+    right 10px
+    top -62px
+    color rgba(255,255,255,0.1)
+
+  .users
+    .right-container,
+    .left-container
+      width 100%
+      max-width 100%
+
+      .social-links
+        max-width 100%
+
+    .right-container,
+    .button-container
+      margin-left 0
+
+    .change-element
+      margin-bottom 1%
+
+    .change-element,
+    .delete-element
+      min-height 100px
+
+@media all and (max-width: 580px)
+  .wrapper
+    padding 15px 8px 0 8px
+    flex-direction column
+
+  .content
+    padding 10px 4px 15px 0
+
+  .logo-container
+    margin-top 0
+    margin-bottom 20px
+    width 100%
+    text-align center
+
+  .global-menu
+    width 100%
+    flex-direction row
+    flex-shrink none
+    flex-wrap wrap
+
+    .menu-item
+      width auto
+      flex-grow 1
+
+  .title-page
+    display none
+
+  .users
+    padding 3px 8px 3px 3px
+
+    .left-container
+      flex-direction column
+
+    .user-image-container
+      width 100%
+      height 200px

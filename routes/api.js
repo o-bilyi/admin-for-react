@@ -17,18 +17,12 @@ router.route("/users")
             res.redirect("/users", {errors: "some error"});
         });
     })
-    .put((request, response) => {
-        const delatetElem = db.allData.users.find(i => i.id = request.body);
-        deleteImages(delatetElem.img, delatetElem["preview-img"]).then(() => {
-            db.removeUser(request.body).then(() => response.send("ok"));
-        });
-    })
     .delete((request, response) => {
         const delatetElem = db.allData.users.find(i => i.id = request.body);
         deleteImages(delatetElem.img, delatetElem["preview-img"]).then(() => {
             db.removeUser(request.body).then(() => response.send("ok"));
         });
-    });
+    })
 
 router.route("/projects")
     .get((req, res) => {
@@ -45,8 +39,8 @@ router.route("/projects")
     })
     .delete((request, response) => {
         const delatetElem = db.allData.projects.find(i => i.id = request.body);
-        deleteImages(delatetElem.img, delatetElem["preview-img"]).then(() => {
-            db.removeProject(request.body).then(() => response.send("ok"));
+        deleteImages(delatetElem.img, delatetElem.previewImg).then(() => {
+            db.removeProject(request.body).then(() => response.send('ok'));
         });
     });
 

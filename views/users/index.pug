@@ -3,24 +3,32 @@ extends ../layout
 block content
     .content
         h2.title-page Team
+        .title-and-description
+            h3.title About Us. A team inspired by the design
+            p.description
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                | labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                | laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                | consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         .users
             each user, index in users
-                .user-container
+                form.user-container(method="post" enctype="multipart/form-data" action="/api/users")
                     .index=index + 1
                     .left-container
                         .user-image-container
                             .user-img(style=`background-image:url(uploads-image/${user["img"]})`)
+                            input.download-user-img(type="file" required autocomplete="off" value=user["img"] name="img" placeholder="user-img")
                         .user-description-container
                             .user-name-and-position
                                 .user-name
                                     label(for="name") Name
-                                    input#name(type="text" readonly autocomplete="off" value=user["user-name"])
+                                    input#name(type="text" name="user-name"  autocomplete="off" value=user["user-name"])
                                 .position
                                     label(for="position") Position
-                                    input#position(type="text" readonly autocomplete="off" value=user["user-position"])
+                                    input#position(type="text" name="user-position"  autocomplete="off" value=user["user-position"])
                             .user-description
                                 label(for="description") Description
-                                textarea#description(readonly autocomplete="off")=user["user-description"]
+                                textarea.user-description-textarea#description(name="user-description"  autocomplete="off")=user["user-description"]
                     .right-container
                         .social-links
                             h5.title-links Social links
@@ -28,34 +36,33 @@ block content
                                 .facebook
                                     .icon
                                         i.fa.fa-facebook-f
-                                    input.social-input(type="text" name="facebook" readonly autocomplete="off"  value=user["user-facebook"])
+                                    input.social-input(type="text" name="user-facebook"  autocomplete="off"  value=user["user-facebook"])
                                 .linkedin
                                     .icon
-                                        i.fa.fa-linkedin-in
-                                    input.social-input(type="text" name="instagram" readonly autocomplete="off"  value=user["user-instagram"])
+                                        i.fa.fa-linkedin
+                                    input.social-input(type="text" name="user-instagram"  autocomplete="off"  value=user["user-instagram"])
                                 .behance
                                     .icon
                                         i.fa.fa-behance
-                                    input.social-input(type="text" name="behance" readonly autocomplete="off"  value=user["user-behance"])
+                                    input.social-input(type="text" name="user-behance"  autocomplete="off"  value=user["user-behance"])
                                 .dribbble
                                     .icon
                                         i.fa.fa-dribbble
-                                    input.social-input(type="text" name="dribbble" readonly autocomplete="off" value=user["user-dribbble"])
+                                    input.social-input(type="text" name="user-dribbble"  autocomplete="off" value=user["user-dribbble"])
+                    .button-container
+                        button.change-element(type="submit", data-method="delete" data-api="users" data-id=user.id) Change
 
-                    button(type="delete", data-method="put" data-api="users" data-id=user.id).change-element
-                        span.text-button save changes
-
-                    button(type="delete", data-method="delete" data-api="users" data-id=user.id).delete-element
-                        span.text-button delete user
+                        button.delete-element(type="button", data-method="delete" data-api="users" data-id=user.id) Delete
 
         button.add-user.show-modal-form add new
         .modal-form
-            form(method="post" enctype="multipart/form-data" action="/api/users")
+            button.close-modal.show-modal-form close
+            form.submit-form(method="post" enctype="multipart/form-data" action="/api/users")
                 .flex-container
                     .input-container
-                        input(type="text" autocomplete="off" name="user-name", placeholder="name")
+                        input(type="text" autocomplete="off" name="user-name" placeholder="name")
                     .input-container
-                        input(type="text" autocomplete="off" name="user-position", placeholder="position")
+                        input(type="text" autocomplete="off" name="user-position" placeholder="position")
                     .input-container
                         input(type="text" autocomplete="off" name="user-description" placeholder="description")
                     .input-container

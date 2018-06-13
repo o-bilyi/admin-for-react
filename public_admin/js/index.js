@@ -1,13 +1,12 @@
-const deleteElement = document.querySelectorAll(".delete-element");
-const changeElement = document.querySelectorAll(".change-element");
+const deleteElement = document.querySelectorAll(".delete-element, .change-element");
 const activeItemMenu = document.querySelectorAll(".menu-item");
 const showModalFormButton = document.querySelectorAll(".show-modal-form");
 const modalForm = document.querySelector(".modal-form");
 
 const DeleteElement = evt => {
-	const dataId = +evt.target.getAttribute("data-id");
-	const dataApi = evt.target.getAttribute("data-api");
-	const dataMethod = evt.target.getAttribute("data-method");
+	const dataId = +evt.target.dataset.id;
+	const dataApi = evt.target.dataset.api;
+	const dataMethod = evt.target.dataset.method;
 
 	fetch(`/api/${dataApi}`,{
 		headers: {
@@ -27,10 +26,6 @@ const DeleteElement = evt => {
 };
 
 deleteElement.forEach(item => {
-    item.onclick = DeleteElement;
-});
-
-changeElement.forEach(item => {
     item.onclick = DeleteElement;
 });
 
