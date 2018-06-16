@@ -1,49 +1,60 @@
 extends ../layout
 block content
-    .content
-        h2.title-page Projects
+	.content
+		h2.title-page Projects
 
-        .projects
-            //.search-container
-            //    input.search(type=search name=search placeholder=search)
-            //    button.fa.fa-search(type="submit")
-            each project, index in projects
-                form.project-container(method="post" enctype="multipart/form-data" action="/api/projects")
-                    .index=index + 1
-                    .left-container
-                        .project-image-container
-                            div.project-image.user-img(style=`background-image:url(uploads-image/${project.img})`)
-                            input.download-project-img(type="file", name="img" placeholder="project-img")
+		.projects
+			//.search-container
+			//    input.search(type=search name=search placeholder=search)
+			//    button.fa.fa-search(type="submit")
+			each project, index in projects
 
-                            div.project-preview-image.user-img(style=`background-image:url(uploads-image/${project.previewImg})`)
-                            input.download-project-preview-img(type="file", name="previewImg" placeholder="preview-project-img")
-                    .right-container
-                        .project-name
-                            input.custom-style-input(type="text" name="project-name" autocomplete="off" value=project["project-name"])
-                        .ptoject-link
-                            input.custom-style-input(type="text" name="project-link" autocomplete="off" value=project["project-link"])
-                        .button-container
-                            button.change-element(type="submit", data-method="delete" data-api="projects" data-id=project.id) Change
+				form.project-container(method="post" enctype="multipart/form-data" action="/api/projects")
 
-                            button.delete-element(type="button", data-method="delete" data-api="projects" data-id=project.id) Delete
+					.index=index + 1
+
+					.left-container
+
+						.project-image-container
+
+							.image-project.active
+								div.project-image.user-img(style=`background-image:url(uploads-image/${project.img})`)
+								input.download-project-img(type="file", name="img" placeholder="project-img")
+
+							.preview-project
+								div.project-preview-image.user-img(style=`background-image:url(uploads-image/${project.previewImg})`)
+								input.download-project-preview-img(type="file", name="previewImg" placeholder="preview-project-img")
+
+							button.show-preview-button.active(type="button") Preview
+							button.show-image-button(type="button") Image
+
+					.right-container
+						.project-name
+							input.custom-style-input(type="text" name="project-name" autocomplete="off" value=project["project-name"])
+						.ptoject-link
+							input.custom-style-input(type="text" name="project-link" autocomplete="off" value=project["project-link"])
+						.button-container
+							button.change-element(type="submit", data-method="delete" data-api="projects" data-id=project.id) Change
+
+							button.delete-element(type="button", data-method="delete" data-api="projects" data-id=project.id) Delete
 
 
-        button.add-user.show-modal-form add new project
+		button.add-user.show-modal-form add new project
 
-    .modal-form
-        button.close-modal.show-modal-form close
-        form.submit-form(method="post" enctype="multipart/form-data" action="/api/projects")
-            .flex-container
-                .input-container
-                    input(type="text", name="project-name", placeholder="project-name")
-                .input-container
-                    input(type="text", name="project-link" placeholder="project-link")
-                .input-container
-                    input(type="file", name="img" placeholder="project-img")
-                .input-container
-                    input(type="file", name="previewImg" placeholder="preview-project-img")
-            .button-container
-                button(type="submit") Save
-                button(type="reset") Reset
+	.modal-form
+		button.close-modal.show-modal-form close
+		form.submit-form(method="post" enctype="multipart/form-data" action="/api/projects")
+			.flex-container
+				.input-container
+					input(type="text", name="project-name", placeholder="project-name")
+				.input-container
+					input(type="text", name="project-link" placeholder="project-link")
+				.input-container
+					input(type="file", name="img" placeholder="project-img")
+				.input-container
+					input(type="file", name="previewImg" placeholder="preview-project-img")
+			.button-container
+				button(type="submit") Save
+				button(type="reset") Reset
 
-    div=errors
+	div=errors

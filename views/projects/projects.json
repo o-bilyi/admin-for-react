@@ -5,5 +5,47 @@
     "project-link": "www.eliteauto.com.ua",
     "img": "1528873607406-eliteAuto.jpg",
     "previewImg": "1528873607419-eliteAuto.jpg"
+  },
+  {
+    "id": 1528913526367,
+    "project-name": "Rivoli",
+    "project-link": "http://rivoli.shade-design.com.ua/",
+    "img": "1528913526369-rivoli.jpg",
+    "previewImg": "1528913526385-rivoli.jpg"
+  },
+  {
+    "id": 1528913631035,
+    "project-name": "Consult Group",
+    "project-link": "http://www.consult-group.com.ua/",
+    "img": "1528913631037-consult-group.jpg",
+    "previewImg": "1528913631104-consult_group.jpg"
+  },
+  {
+    "id": 1528913800831,
+    "project-name": "Газпром нефть",
+    "project-link": "http://www.gazprom-neft.ru/",
+    "img": "1528913800833-gazz.jpg",
+    "previewImg": "1528913800853-gaz_prom.jpg"
+  },
+  {
+    "id": 1528913845717,
+    "project-name": "Smm Coffee",
+    "project-link": "http://smmcoffee.it/",
+    "img": "1528913845719-coffee.jpg",
+    "previewImg": "1528913845733-smm_page.jpg"
+  },
+  {
+    "id": 1528915539602,
+    "project-name": "Адвокат",
+    "project-link": "http://www.advocate-grinchenko.com.ua/",
+    "img": "1528915539605-attorney.jpg",
+    "previewImg": "1528915539607-attorney.png"
+  },
+  {
+    "id": 1528917364803,
+    "project-name": "Скинали",
+    "project-link": "http://pg.deks.ua/",
+    "img": "1528917364805-glass.jpg",
+    "previewImg": "1528917364823-deks.jpg"
   }
 ]

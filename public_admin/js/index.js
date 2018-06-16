@@ -3,6 +3,9 @@ const activeItemMenu = document.querySelectorAll(".menu-item");
 const showModalFormButton = document.querySelectorAll(".show-modal-form");
 const modalForm = document.querySelector(".modal-form");
 
+const showPreviewImageButton = document.querySelectorAll(".show-preview-button");
+const showImageButton = document.querySelectorAll(".show-image-button");
+
 const DeleteElement = evt => {
 	const dataId = +evt.target.dataset.id;
 	const dataApi = evt.target.dataset.api;
@@ -41,3 +44,40 @@ showModalFormButton.forEach(item => {
        modalForm.classList.toggle("active");
    }
 });
+
+if(showImageButton) {
+
+	showImageButton.forEach(item => {
+		item.onclick = function() {
+			const parent = item.parentNode;
+
+			const imageProject = parent.querySelector(".image-project");
+			const previewProject = parent.querySelector(".preview-project");
+
+			const showImage = parent.querySelector(".show-image-button");
+
+			imageProject.classList.toggle("active");
+			previewProject.classList.toggle("active");
+
+			this.classList.toggle("active");
+			showImage.classList.toggle("active");
+		}
+	});
+
+	showPreviewImageButton.forEach(item => {
+		item.onclick = function() {
+			const parent = item.parentNode;
+
+			const imageProject = parent.querySelector(".image-project");
+			const previewProject = parent.querySelector(".preview-project");
+
+			const showImage = parent.querySelector(".show-image-button");
+
+			imageProject.classList.toggle("active");
+			previewProject.classList.toggle("active");
+
+			this.classList.toggle("active");
+			showImage.classList.toggle("active");
+		}
+	});
+}

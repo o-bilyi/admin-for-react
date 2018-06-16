@@ -181,6 +181,34 @@ img {
   width: 140px;
   height: 140px;
   background-size: cover;
+  background-position: center;
+}
+.change-element {
+  background-image: url("../img/save-icon.svg");
+  margin-bottom: 2%;
+}
+.delete-element {
+  background-image: url("../img/remove-icon.svg");
+}
+.change-element,
+.delete-element {
+  background-position: center 50%;
+  background-size: 35px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding-top: 50%;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #5f5f5f;
+  height: 50%;
 }
 .users {
   max-height: 650px;
@@ -244,33 +272,6 @@ img {
   display: flex;
   flex-direction: column;
   min-width: 125px;
-}
-.users .change-element {
-  background-image: url("../img/save-icon.svg");
-  margin-bottom: 2%;
-}
-.users .delete-element {
-  background-image: url("../img/remove-icon.svg");
-}
-.users .change-element,
-.users .delete-element {
-  background-position: center 50%;
-  background-size: 35px;
-  background-color: #333;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column-reverse;
-  padding-top: 50%;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #5f5f5f;
-  height: 50%;
 }
 .users .left-container {
   background-color: #363636;
@@ -393,7 +394,7 @@ img {
 }
 .modal-form {
   position: fixed;
-  top: 50%;
+  bottom: 0;
   left: 0;
   right: 0;
   transition: transform 0.3s;
@@ -402,7 +403,7 @@ img {
   margin: auto;
 }
 .modal-form.active {
-  transform: translateY(-50%);
+  transform: translateY(-300%);
 }
 .modal-form form {
   box-shadow: 0 0 7px 0 rgba(109,109,109,0.6);
@@ -416,11 +417,10 @@ img {
   cursor: pointer;
 }
 .projects {
-  max-width: 1150px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 .projects .search-container {
   width: 100%;
@@ -430,17 +430,87 @@ img {
   width: 100%;
   max-width: 260px;
 }
-.project-container {
+.projects .index,
+.projects .left-container,
+.projects .right-container {
+  flex-grow: 1;
+}
+.projects .right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.projects .button-container {
+  height: 100%;
+  overflow: hidden;
+}
+.projects .change-element,
+.projects .delete-element {
+  width: 100%;
+  padding-top: 35%;
+}
+.projects .image-project,
+.projects .preview-project,
+.projects .show-preview-button,
+.projects .show-image-button {
+  display: none;
+}
+.projects .image-project.active,
+.projects .preview-project.active,
+.projects .show-preview-button.active,
+.projects .show-image-button.active {
+  display: block;
+}
+.projects .show-preview-button,
+.projects .show-image-button {
+  background-color: transparent;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #595959;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  padding-bottom: 5px;
+}
+.projects .show-preview-button:hover,
+.projects .show-image-button:hover {
+  color: #595959;
+}
+.projects input {
+  border: none;
+  border-bottom: 1px solid #595959;
+  padding-bottom: 10px;
+  transition-duration: 0.3s;
+  transition-property: color, border-bottom-color;
+  color: #595959;
+  background-color: transparent;
+  resize: none;
+  height: 25px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+.projects input:hover,
+.projects input:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.projects .project-container {
   max-width: 530px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
-.project-container .left-container {
+.projects .left-container {
   max-width: 240px;
   padding: 35px;
   background-color: #333;
+  margin-right: 10px;
 }
-.project-container .project-preview-image {
+.projects .project-preview-image {
   margin-top: 10px;
 }
 @media all and (max-width: 1800px) {
@@ -505,6 +575,12 @@ img {
     height: 50%;
     padding-top: 50px;
     min-height: 100px;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .project-container {
+    max-width: 100%;
   }
 }
 @media all and (max-width: 950px) {

@@ -27,6 +27,7 @@ router.route("/users")
 router.route("/projects")
     .get((req, res) => {
         res.send(db.allData.projects);
+        console.warn(res.headers);
     })
     .post((req, res) => {
         uploader(req).then(result => {
