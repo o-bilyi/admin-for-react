@@ -16,19 +16,19 @@ block content
                     .index=index + 1
                     .left-container
                         .user-image-container
-                            .user-img(style=`background-image:url(uploads-image/${user["img"]})`)
-                            input.download-user-img(type="file" required autocomplete="off" value=user["img"] name="img" placeholder="user-img")
+                            .user-img(style=`background-image:url(uploads-image/${user.img})`)
+                            input.download-user-img(type="file" required autocomplete="off" value=user.img name="img" placeholder="user-img")
                         .user-description-container
                             .user-name-and-position
                                 .user-name
                                     label(for="name") Name
-                                    input#name(type="text" name="user-name"  autocomplete="off" value=user["user-name"])
+                                    input#name(type="text" name="name"  autocomplete="off" value=user.name)
                                 .position
                                     label(for="position") Position
-                                    input#position(type="text" name="user-position"  autocomplete="off" value=user["user-position"])
+                                    input#position(type="text" name="position"  autocomplete="off" value=user.position)
                             .user-description
                                 label(for="description") Description
-                                textarea.user-description-textarea#description(name="user-description"  autocomplete="off")=user["user-description"]
+                                textarea.user-description-textarea#description(name="description"  autocomplete="off")=user.description
                     .right-container
                         .social-links
                             h5.title-links Social links
@@ -36,19 +36,19 @@ block content
                                 .facebook
                                     .icon
                                         i.fa.fa-facebook-f
-                                    input.social-input(type="text" name="user-facebook"  autocomplete="off"  value=user["user-facebook"])
+                                    input.social-input(type="text" name="facebook"  autocomplete="off"  value=user.facebook)
                                 .linkedin
                                     .icon
                                         i.fa.fa-linkedin
-                                    input.social-input(type="text" name="user-instagram"  autocomplete="off"  value=user["user-instagram"])
+                                    input.social-input(type="text" name="instagram"  autocomplete="off"  value=user.instagram)
                                 .behance
                                     .icon
                                         i.fa.fa-behance
-                                    input.social-input(type="text" name="user-behance"  autocomplete="off"  value=user["user-behance"])
+                                    input.social-input(type="text" name="behance"  autocomplete="off"  value=user.behance)
                                 .dribbble
                                     .icon
                                         i.fa.fa-dribbble
-                                    input.social-input(type="text" name="user-dribbble"  autocomplete="off" value=user["user-dribbble"])
+                                    input.social-input(type="text" name="dribbble"  autocomplete="off" value=user.dribbble)
                     .button-container
                         button.change-element(type="submit", data-method="delete" data-api="users" data-id=user.id) Change
 
@@ -60,19 +60,19 @@ block content
             form.submit-form(method="post" enctype="multipart/form-data" action="/api/users")
                 .flex-container
                     .input-container
-                        input(type="text" autocomplete="off" name="user-name" placeholder="name")
+                        input(type="text" autocomplete="off" name="name" placeholder="name")
                     .input-container
-                        input(type="text" autocomplete="off" name="user-position" placeholder="position")
+                        input(type="text" autocomplete="off" name="position" placeholder="position")
                     .input-container
-                        input(type="text" autocomplete="off" name="user-description" placeholder="description")
+                        input(type="text" autocomplete="off" name="description" placeholder="description")
                     .input-container
-                        input(type="text" autocomplete="off" name="user-facebook" placeholder="facebook")
+                        input(type="text" autocomplete="off" name="facebook" placeholder="facebook")
                     .input-container
-                        input(type="text" autocomplete="off" name="user-instagram" placeholder="instagram")
+                        input(type="text" autocomplete="off" name="instagram" placeholder="instagram")
                     .input-container
-                        input(type="text" autocomplete="off" name="user-behance" placeholder="behance")
+                        input(type="text" autocomplete="off" name="behance" placeholder="behance")
                     .input-container
-                        input(type="text" autocomplete="off" name="user-dribbble" placeholder="dribbble")
+                        input(type="text" autocomplete="off" name="dribbble" placeholder="dribbble")
                     .input-container
                         input(type="file" autocomplete="off" name="img" placeholder="user-img")
                 .button-container

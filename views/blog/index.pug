@@ -1,36 +1,49 @@
 extends ../layout
 
 block content
-    form(method="post" enctype="multipart/form-data" action="/api/posts")
-       .flex-container
-           .input-container
-               input(type="text", name="post-name", placeholder="post-name")
-           .input-container
-               input(type="text", name="post-description" placeholder="post description")
-           .input-container
-               input(type="text", name="post-link" placeholder="post link")
-           .input-container
-               input(type="file", name="img" placeholder="post img")
-           .input-container
-               input(type="file", name="preview-img" placeholder="post preview img")
-       .button-container
-           button(type="submit") Save
-           button(type="reset") Reset
+    .content
+        h2.title-page Team
+        .posts
+            each post, index in posts
+                form.post-container(method="post" enctype="multipart/form-data" action="/api/posts")
+                    .index=index + 1
+                    .left-container
+                        .user-image-container
+                            .user-img(style=`background-image:url(uploads-image/${post.img})`)
+                            input.download-user-img(type="file" required autocomplete="off" value=post.img name="img" placeholder="img")
+                        .user-description-container
+                            .user-name-and-position
+                                .user-name
+                                    label(for="name") Name
+                                    input#name(type="text" name="name"  autocomplete="off" value=post.name)
+                                .position
+                                    label(for="position") Position
+                                    input#position(type="text" name="position"  autocomplete="off" value=post.position)
+                            .user-description
+                                label(for="description") Description
+                                textarea.user-description-textarea#description(name="description"  autocomplete="off" value=post.description)
+                    .button-container
+                        button.change-element(type="submit", data-method="delete" data-api="post" data-id=post.id) Change
 
+                        button.delete-element(type="button", data-method="delete" data-api="post" data-id=post.id) Delete
 
-    table.post-container
-        each post in posts
-            tr
-                td=post["post-name"]
-                td=post["post-description"]
-                td=post["post-link"]
-                td
-                    img(src=`uploads-image/${post["img"]}`)
-                td
-                    img(src=`uploads-image/${post[ "preview-img" ]}`)
-                td
-                    button(type="delete", data-method="delete" data-api="posts" data-id=post.id).delete-element Delete
-                td
-                    button(type="delete", data-method="put" data-api="posts" data-id=post.id).delete-element Change
-    div=errors
+        button.add-user.show-modal-form add new
+        .modal-form
+            button.close-modal.show-modal-form close
+            form.submit-form(method="post" enctype="multipart/form-data" action="/api/posts")
+                .flex-container
+                    .input-container
+                        input(type="text", name="name", placeholder="post-name")
+                    .input-container
+                        input(type="text", name="description" placeholder="post description")
+                    .input-container
+                        input(type="text", name="link" placeholder="post link")
+                    .input-container
+                        input(type="file", name="img" placeholder="post img")
+                    .input-container
+                        input(type="file", name="previewImg" placeholder="post preview img")
+                .button-container
+                    button.show-modal-form(type="submit") Save
+                    button(type="reset") Reset
 
+        div=errors

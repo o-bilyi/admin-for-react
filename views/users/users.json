@@ -1,24 +1,24 @@
 [
   {
-    "id": 1528913103653,
-    "user-name": "Serhii Henyk",
-    "user-position": "UI/UX designer",
-    "user-description": "Art direction and design Define the creative vision and drive concepts to create interactive design Create enduring design solutions that fulfill strategic business objectives Mentor, lead, and inspire designers to come up with innovative ideas Reach strategic goals through design Have a solid understanding of user experience Manage multiple projects Solve business problems",
-    "user-facebook": "https://www.facebook.com/serhii.henyk",
-    "user-instagram": "https://www.linkedin.com/in/serhii.henyk",
-    "user-behance": "",
-    "user-dribbble": "",
-    "img": "1528913103655-ui-ux-designer.png"
+    "id": 1529222653391,
+    "name": "Serhii Henyk",
+    "position": "UI/UX designer",
+    "description": "Напрямок та дизайн мистецтва Визначте креативне бачення та залучення концепцій для створення інтерактивного дизайну Створення міцних дизайнерських рішень, які відповідають стратегічним цілям бізнесу Наставник, лідер, і надихає дизайнерів вигадувати інноваційні ідеї Досягти стратегічних цілей за допомогою дизайну Має міцне розуміння досвіду користувачів Управління кілька проектів Вирішіть бізнес-проблеми",
+    "facebook": "https://www.facebook.com/profile.php?id=100009468553076",
+    "instagram": "https://www.linkedin.com/in/serhii-henyk-58b714151/",
+    "behance": "",
+    "dribbble": "",
+    "img": "1529222653394-ui-ux-designer.png"
   },
   {
-    "id": 1528913303085,
-    "user-name": "Oleksandr Bilyi",
-    "user-position": "Front-end-developer",
-    "user-description": "A highly resourceful, innovative Front - End developer with experience in the layout, design and coding of websites. Possessing knowledge of the development of web applications and scripts using JS programming language.",
-    "user-facebook": "https://www.facebook.com/sasha.beluy.56",
-    "user-instagram": "https://www.linkedin.com/in/oleksandr-bilyi-83156b10a/",
-    "user-behance": "",
-    "user-dribbble": "",
-    "img": "1528913303088-web-dev.png"
+    "id": 1529222718626,
+    "name": "Oleksandr Bilyi",
+    "position": "Front-end-developer",
+    "description": "Високо винахідливий, інноваційний розробник Front-End з досвідом компонування, дизайну та кодування веб-сайтів. Маючи знання про розробку веб-програм та сценаріїв за допомогою мови програмування JS.",
+    "facebook": "https://www.facebook.com/sasha.beluy.56",
+    "instagram": "https://www.linkedin.com/in/oleksandr-bilyi-83156b10a/",
+    "behance": "",
+    "dribbble": "",
+    "img": "1529222718627-web-dev.png"
   }
 ]

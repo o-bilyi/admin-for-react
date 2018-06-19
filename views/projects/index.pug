@@ -30,9 +30,9 @@ block content
 
 					.right-container
 						.project-name
-							input.custom-style-input(type="text" name="project-name" autocomplete="off" value=project["project-name"])
+							input.custom-style-input(type="text" name="name" autocomplete="off" value=project.name)
 						.ptoject-link
-							input.custom-style-input(type="text" name="project-link" autocomplete="off" value=project["project-link"])
+							input.custom-style-input(type="text" name="link" autocomplete="off" value=project.link)
 						.button-container
 							button.change-element(type="submit", data-method="delete" data-api="projects" data-id=project.id) Change
 
@@ -46,9 +46,9 @@ block content
 		form.submit-form(method="post" enctype="multipart/form-data" action="/api/projects")
 			.flex-container
 				.input-container
-					input(type="text", name="project-name", placeholder="project-name")
+					input(type="text", name="name", placeholder="project-name")
 				.input-container
-					input(type="text", name="project-link" placeholder="project-link")
+					input(type="text", name="link" placeholder="project-link")
 				.input-container
 					input(type="file", name="img" placeholder="project-img")
 				.input-container

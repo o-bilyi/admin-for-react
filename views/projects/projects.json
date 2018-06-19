@@ -1,51 +1,37 @@
 [
   {
-    "id": 1528873607402,
-    "project-name": "ELITE AUTO",
-    "project-link": "www.eliteauto.com.ua",
-    "img": "1528873607406-eliteAuto.jpg",
-    "previewImg": "1528873607419-eliteAuto.jpg"
+    "id": 1529222913716,
+    "name": "ELITE AUTO",
+    "link": "https://www.eliteauto.com.ua/",
+    "img": "1529222913718-eliteAuto.jpg",
+    "previewImg": "1529222913728-eliteAuto.jpg"
   },
   {
-    "id": 1528913526367,
-    "project-name": "Rivoli",
-    "project-link": "http://rivoli.shade-design.com.ua/",
-    "img": "1528913526369-rivoli.jpg",
-    "previewImg": "1528913526385-rivoli.jpg"
+    "id": 1529222943616,
+    "name": "RIVOLI",
+    "link": "http://rivoli.shade-design.com.ua/",
+    "img": "1529222943617-rivoli.jpg",
+    "previewImg": "1529222943622-rivoli.jpg"
   },
   {
-    "id": 1528913631035,
-    "project-name": "Consult Group",
-    "project-link": "http://www.consult-group.com.ua/",
-    "img": "1528913631037-consult-group.jpg",
-    "previewImg": "1528913631104-consult_group.jpg"
+    "id": 1529222999579,
+    "name": "CONSULT",
+    "link": "http://www.consult-group.com.ua/",
+    "img": "1529222999581-consult-group.jpg",
+    "previewImg": "1529222999609-consult_group.jpg"
   },
   {
-    "id": 1528913800831,
-    "project-name": "Газпром нефть",
-    "project-link": "http://www.gazprom-neft.ru/",
-    "img": "1528913800833-gazz.jpg",
-    "previewImg": "1528913800853-gaz_prom.jpg"
+    "id": 1529223035457,
+    "name": "SMM",
+    "link": "http://www.smmcoffee.it/",
+    "img": "1529223035459-coffee.jpg",
+    "previewImg": "1529223035466-smm_page.jpg"
   },
   {
-    "id": 1528913845717,
-    "project-name": "Smm Coffee",
-    "project-link": "http://smmcoffee.it/",
-    "img": "1528913845719-coffee.jpg",
-    "previewImg": "1528913845733-smm_page.jpg"
-  },
-  {
-    "id": 1528915539602,
-    "project-name": "Адвокат",
-    "project-link": "http://www.advocate-grinchenko.com.ua/",
-    "img": "1528915539605-attorney.jpg",
-    "previewImg": "1528915539607-attorney.png"
-  },
-  {
-    "id": 1528917364803,
-    "project-name": "Скинали",
-    "project-link": "http://pg.deks.ua/",
-    "img": "1528917364805-glass.jpg",
-    "previewImg": "1528917364823-deks.jpg"
+    "id": 1529223069257,
+    "name": "GAZPROM NEFT",
+    "link": "http://www.gazprom-neft.ru/",
+    "img": "1529223069259-gazz.jpg",
+    "previewImg": "1529223069264-gaz_prom.jpg"
   }
 ]
