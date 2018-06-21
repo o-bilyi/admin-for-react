@@ -18,11 +18,11 @@ block content
 						.project-image-container
 
 							.image-project.active
-								div.project-image.user-img(style=`background-image:url(uploads-image/${project.img})`)
+								div.project-image.user-img(style=`background-image:url(../uploads-image/${project.img})`)
 								input.download-project-img(type="file", name="img" placeholder="project-img")
 
 							.preview-project
-								div.project-preview-image.user-img(style=`background-image:url(uploads-image/${project.previewImg})`)
+								div.project-preview-image.user-img(style=`background-image:url(../uploads-image/${project.previewImg})`)
 								input.download-project-preview-img(type="file", name="previewImg" placeholder="preview-project-img")
 
 							button.show-preview-button.active(type="button") Preview
