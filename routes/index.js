@@ -3,7 +3,7 @@ const router  = express.Router();
 const db      = require("./util/data-base");
 
 // router.route("*").get((req, res) => {
-// 	res.render("index");
+// 	res.send("index");
 // });
 
 router.route("/admin").get((req, res) => {
