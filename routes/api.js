@@ -1,5 +1,4 @@
-const express = require("express");
-const router = express.Router();
+const router = require("express").Router();
 const db = require("./util/data-base");
 const uploader = require("./util/file-uploader");
 const deleteImages = require("./util/delete-item");
