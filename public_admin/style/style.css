@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  outline: none;
   box-sizing: border-box;
 }
 body,
@@ -26,6 +27,9 @@ li {
 .wrapper {
   padding: 100px 95px 0 0;
   display: flex;
+}
+h1 {
+  color: #fff;
 }
 .content {
   background-color: #3b3b3b;
@@ -447,7 +451,8 @@ img {
 .projects .change-element,
 .projects .delete-element {
   width: 100%;
-  padding-top: 35%;
+  padding-top: 0;
+  min-width: 65px;
 }
 .projects .image-project,
 .projects .preview-project,
@@ -499,10 +504,10 @@ img {
   border-bottom-color: #fff;
 }
 .projects .project-container {
-  max-width: 530px;
   display: flex;
-  justify-content: space-between;
+  max-width: 33%;
   margin-bottom: 25px;
+  justify-content: flex-start;
 }
 .projects .left-container {
   max-width: 240px;
@@ -541,6 +546,9 @@ img {
   .users .user-description-container {
     padding: 30px 15px;
   }
+  .projects .project-container {
+    max-width: 50%;
+  }
 }
 @media all and (max-width: 1200px) {
   .wrapper {
@@ -576,12 +584,6 @@ img {
     padding-top: 50px;
     min-height: 100px;
   }
-  .projects {
-    flex-direction: column;
-  }
-  .project-container {
-    max-width: 100%;
-  }
 }
 @media all and (max-width: 950px) {
   .global-menu {
@@ -615,6 +617,19 @@ img {
   .users .change-element,
   .users .delete-element {
     min-height: 100px;
+  }
+  .projects .project-container {
+    max-width: 100%;
+  }
+}
+@media all and (max-width: 680px) {
+  .projects .left-container {
+    max-width: 140px;
+    padding: 15px;
+  }
+  .projects .user-img {
+    width: 110px;
+    height: 90px;
   }
 }
 @media all and (max-width: 580px) {

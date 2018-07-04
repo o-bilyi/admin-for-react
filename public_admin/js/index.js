@@ -14,7 +14,8 @@ const DeleteElement = evt => {
 	fetch(`/api/${dataApi}`,{
 		headers: {
 			"Accept": "application/json",
-			"Content-Type": "application/json"
+			"Content-Type": "application/json",
+			"id" : dataId
 		},
 		method: dataMethod,
 		body : dataId,
@@ -35,7 +36,6 @@ deleteElement.forEach(item => {
 activeItemMenu.forEach(item => {
     let location = window.location.pathname.toLocaleLowerCase();
     let thisItem = item.dataset.name.toLocaleLowerCase();
-    location = location.slice(1);
     location === thisItem ? item.classList.add("active") : item.classList.remove("active")
 });
 

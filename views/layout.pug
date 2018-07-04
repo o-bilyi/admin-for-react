@@ -4,11 +4,11 @@ html
         title Admin Panel
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,500,700")
-        //link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
         link(rel="stylesheet", href="/style/style.css")
     body
 
-    -nav = ["users","projects","blog"];
+    -nav = ["users","projects","blog","contacts"];
 
     .wrapper
         ul.global-menu
@@ -19,7 +19,7 @@ html
                 p.description-logo Dashboard
 
             each item in nav
-                li.menu-item(data-name=item)
+                li.menu-item(data-name=`/admin/${item}`)
                     a.link-menu(href=`/admin/${item}`)=item
 
         block content

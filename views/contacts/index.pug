@@ -1,15 +1,13 @@
 extends ../layout
 block content
 	.content
-		h2.title-page Projects
+		h2.title-page Contacts
 
-		.projects
-			//.search-container
-			//    input.search(type=search name=search placeholder=search)
-			//    button.fa.fa-search(type="submit")
-			each project, index in projects
+		.contacts
 
-				form.project-container(method="post" enctype="multipart/form-data" action="/api/projects")
+			each contact, index in contacts
+
+				form.contact-container(method="post" enctype="multipart/form-data" action="/api/contacts")
 
 					.index=index + 1
 
@@ -34,15 +32,15 @@ block content
 						.ptoject-link
 							input.custom-style-input(type="text" name="link" autocomplete="off" value=project.link)
 						.button-container
-							button.change-element(type="submit", data-method="delete" data-api="projects" data-id=project.id)
+							button.change-element(type="submit", data-method="delete" data-api="projects" data-id=contact.id)
 
-							button.delete-element(type="button", data-method="delete" data-api="projects" data-id=project.id)
+							button.delete-element(type="button", data-method="delete" data-api="projects" data-id=contact.id)
 
 		button.add-user.show-modal-form add new project
 
 	.modal-form
 		button.close-modal.show-modal-form close
-		form.submit-form(method="post" enctype="multipart/form-data" action="/api/projects")
+		form.submit-form(method="post" enctype="multipart/form-data" action="/api/contacts")
 			.flex-container
 				.input-container
 					input(type="text", name="name", placeholder="project-name")

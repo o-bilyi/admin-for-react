@@ -10,10 +10,10 @@ router.route("/users")
     .post((req, res) => {
         uploader(req).then(result => {
             db.setUsers(result);
-            res.redirect("/users");
+            res.redirect("/admin/users");
         }).catch(e => {
             console.warn(e);
-            res.redirect("/users", {errors: "some error"});
+            res.redirect("/admin/users", {errors: "some error"});
         });
     })
     .delete((request, response) => {
@@ -26,21 +26,22 @@ router.route("/users")
 router.route("/projects")
     .get((req, res) => {
         res.send(db.allData.projects);
-        console.warn(res.headers);
     })
     .post((req, res) => {
         uploader(req).then(result => {
             db.setProject(result);
-            res.redirect("/projects");
+            res.redirect("/admin/projects");
         }).catch(e => {
             console.warn(e);
-            res.redirect("/projects", {errors: "some error"});
+            res.redirect("/admin/projects", {errors: "some error"});
         });
     })
     .delete((request, response) => {
-        const delatetElem = db.allData.projects.find(i => i.id = request.body);
+        console.warn(request.headers.id);
+        const delatetElem = db.allData.projects.find(i => i.id = request.headers.id);
         deleteImages(delatetElem.img, delatetElem.previewImg).then(() => {
-            db.removeProject(request.body).then(() => response.send('ok'));
+            // db.removeProject(request.headers.id).then(() =>  console.warn('ok'));
+            db.removeProject(request.headers.id).then(() =>  response.send('ok'));
         });
     });
 
@@ -51,10 +52,10 @@ router.route("/posts")
     .post((req, res) => {
         uploader(req).then(result => {
             db.setPosts(result);
-            res.redirect("/blog");
+            res.redirect("/admin/blog");
         }).catch(e => {
             console.warn(e);
-            res.redirect("/blog", {errors: "some error"});
+            res.redirect("/admin/blog", {errors: "some error"});
         });
     })
     .delete((request, response) => {
@@ -63,5 +64,19 @@ router.route("/posts")
             db.removePost(request.body).then(() => response.send("ok"));
         });
     });
+
+router.route("/contacts")
+    .get((req, res) => {
+      res.send(db.allData.contacts);
+    })
+    .post((req, res) => {
+      uploader(req).then(result => {
+        db.setContact(result);
+        res.redirect("/admin/contacts");
+      }).catch(e => {
+        console.warn(e);
+        res.redirect("/admin/contacts", {errors: "some error"});
+      });
+    })
 
 module.exports = router;

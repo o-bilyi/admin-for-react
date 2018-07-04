@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Host: shade-design.com.ua
+Sitemap: http://shade-design.com.ua/sitemap.xml

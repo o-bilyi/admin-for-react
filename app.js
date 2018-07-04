@@ -1,15 +1,15 @@
-const express = require("express");
-const path = require("path");
-const favicon = require("serve-favicon");
-const logger = require("morgan");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
+const favicon = require("serve-favicon");
+const express = require("express");
+const logger = require("morgan");
 const stylus = require("stylus");
+const path = require("path");
 const app = express();
 
-const index = require("./routes/index");
 const api = require("./routes/api");
 const admin = require("./routes/admin");
+const index = require("./routes/index");
 
 
 // view engine setup
@@ -26,8 +26,8 @@ app.use(stylus.middleware(path.join(__dirname, "public_admin")));
 app.use(express.static(path.join(__dirname, "public_admin")));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/admin", admin);
 app.use("/api", api);
+app.use("/admin", admin);
 app.use("/", index);
 
 // catch 404 and forward to error handler
