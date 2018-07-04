@@ -7,25 +7,25 @@ const showPreviewImageButton = document.querySelectorAll(".show-preview-button")
 const showImageButton = document.querySelectorAll(".show-image-button");
 
 const DeleteElement = evt => {
-	const dataId = +evt.target.dataset.id;
+	const dataId = evt.target.dataset.id;
 	const dataApi = evt.target.dataset.api;
 	const dataMethod = evt.target.dataset.method;
 
 	fetch(`/api/${dataApi}`,{
 		headers: {
 			"Accept": "application/json",
-			"Content-Type": "application/json",
-			"id" : dataId
+			"Content-Type": "application/json"
 		},
 		method: dataMethod,
-		body : dataId,
+		body : JSON.stringify({id : dataId}),
 	})
 	.then(function (data) {
-		console.log("Request success: ", data);
-		location.reload();
-	})
-	.catch(function (error) {
-		console.log("Request failure: ", error);
+		if(data.ok) {
+		 //   location.reload();
+			console.log("Request success: ", data);
+		} else {
+        	console.log("Request failure: ", data.json());
+		}
 	});
 };
 

@@ -398,16 +398,17 @@ img {
 }
 .modal-form {
   position: fixed;
-  bottom: 0;
+  top: 50%;
   left: 0;
   right: 0;
   transition: transform 0.3s;
-  transform: translateY(300%);
+  transform: translateY(-50%);
   max-width: 500px;
   margin: auto;
+  display: none;
 }
 .modal-form.active {
-  transform: translateY(0);
+  display: block;
 }
 .modal-form form {
   box-shadow: 0 0 7px 0 rgba(109,109,109,0.6);

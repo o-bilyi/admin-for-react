@@ -17,4 +17,8 @@ router.route("/users").get((req, res) => {
     res.render("users", {users: db.allData.users});
 });
 
+router.route("/contacts").get((req, res) => {
+    res.render("contacts", {contacts: db.allData.contacts});
+});
+
 module.exports = router;

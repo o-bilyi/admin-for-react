@@ -30,6 +30,7 @@ router.route("/projects")
     .post((req, res) => {
         uploader(req).then(result => {
             db.setProject(result);
+            console.log(db.allData.projects);
             res.redirect("/admin/projects");
         }).catch(e => {
             console.warn(e);
@@ -37,11 +38,11 @@ router.route("/projects")
         });
     })
     .delete((request, response) => {
-        console.warn(request.headers.id);
-        const delatetElem = db.allData.projects.find(i => i.id = request.headers.id);
+        const id = request.body.id;
+        const delatetElem = db.allData.projects.find(i => i.id = id);
         deleteImages(delatetElem.img, delatetElem.previewImg).then(() => {
             // db.removeProject(request.headers.id).then(() =>  console.warn('ok'));
-            db.removeProject(request.headers.id).then(() =>  response.send('ok'));
+            db.removeProject(id).then(() =>  response.send('ok'));
         });
     });
 

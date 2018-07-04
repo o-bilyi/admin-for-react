@@ -28,10 +28,11 @@ const setData = (to, data) => {
 
 const removeData = (to, data) => {
     return new Promise((res, rej) => {
+        console.log(allData[to], data);
         allData[to] = allData[to].filter(item => {
-            console.warn(data, " data-base");
             return item.id !== data;
         });
+        console.log(allData[to], data);
         jsonFile.writeFile(fileLinks[`${to}File`], allData[to], {spaces: 2}, (err) => {
             if (err) {
                 rej(err)
@@ -54,7 +55,7 @@ module.exports = {
     setProject,
     setPosts,
     setUsers,
-	  setContact,
+    setContact,
     removePost,
     removeUser,
     removeProject,
