@@ -30,7 +30,6 @@ router.route("/projects")
     .post((req, res) => {
         uploader(req).then(result => {
             db.setProject(result);
-            console.log(db.allData.projects);
             res.redirect("/admin/projects");
         }).catch(e => {
             console.warn(e);

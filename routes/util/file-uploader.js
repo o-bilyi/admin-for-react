@@ -31,7 +31,7 @@ function uploadFile(req) {
     })
     .on('fileBegin', function (name, file) {
       const [fileName, fileExt] = file.name.split('.');
-      file.path = form.uploadDir + "/" + fieldForm.id + "-" + "-" + fileName + "." + fileExt;
+      file.path = form.uploadDir + "/" + fieldForm.id + "-" + fileName + "." + fileExt;
     })
 
     .on("field", function(field, value) {

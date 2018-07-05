@@ -17,6 +17,7 @@ const allData = {
 const setData = (to, data) => {
     return new Promise((res, rej) => {
         allData[to].push(data);
+        console.warn(allData[to], data, " set-data");
         jsonFile.writeFile(fileLinks[`${to}File`], allData[to], {spaces: 2}, (err) => {
             if (err) {
                 rej(err)
@@ -28,11 +29,9 @@ const setData = (to, data) => {
 
 const removeData = (to, data) => {
     return new Promise((res, rej) => {
-        console.log(allData[to], data);
         allData[to] = allData[to].filter(item => {
             return item.id !== data;
         });
-        console.log(allData[to], data);
         jsonFile.writeFile(fileLinks[`${to}File`], allData[to], {spaces: 2}, (err) => {
             if (err) {
                 rej(err)
