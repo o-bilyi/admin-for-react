@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const db = require("./util/data-base");
 const uploader = require("./util/file-uploader");
-const deleteImages = require("./util/delete-item");
+const deleteImages = require("./util/delete-image");
 
 router.route("/users")
     .get(function (req, res) {
@@ -39,6 +39,7 @@ router.route("/projects")
     .delete((request, response) => {
         const id = request.body.id;
         const delatetElem = db.allData.projects.find(i => i.id = id);
+        console.warn(delatetElem);
         deleteImages(delatetElem.img, delatetElem.previewImg).then(() => {
             // db.removeProject(request.headers.id).then(() =>  console.warn('ok'));
             db.removeProject(id).then(() =>  response.send('ok'));

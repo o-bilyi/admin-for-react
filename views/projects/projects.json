@@ -1,9 +1,16 @@
 [
   {
-    "id": "1530860654325",
+    "id": "1530887730584",
     "name": "2",
-    "link": "http://rivoli.shade-design.com.ua/",
-    "img": "1530860654325-rivoli.jpg",
-    "previewImg": "1530860654325-eliteAuto.jpg"
+    "link": "3",
+    "img": "1530887730584-manage-funds.png",
+    "previewImg": "1530887730584-payment2of2.png"
+  },
+  {
+    "id": "1530887740578",
+    "name": "3",
+    "link": "3",
+    "img": "1530887740578-3EURdepositBonus.jpg",
+    "previewImg": "1530887740578-payment1of2.png"
   }
 ]

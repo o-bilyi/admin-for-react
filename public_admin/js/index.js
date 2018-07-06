@@ -1,10 +1,9 @@
-const deleteElement = document.querySelectorAll(".delete-element, .change-element");
-const activeItemMenu = document.querySelectorAll(".menu-item");
-const showModalFormButton = document.querySelectorAll(".show-modal-form");
 const modalForm = document.querySelector(".modal-form");
-
-const showPreviewImageButton = document.querySelectorAll(".show-preview-button");
+const activeItemMenu = document.querySelectorAll(".menu-item");
 const showImageButton = document.querySelectorAll(".show-image-button");
+const showModalFormButton = document.querySelectorAll(".show-modal-form");
+const showPreviewImageButton = document.querySelectorAll(".show-preview-button");
+const deleteElement = document.querySelectorAll(".delete-element, .change-element");
 
 const DeleteElement = evt => {
 	const dataId = evt.target.dataset.id;
@@ -21,7 +20,7 @@ const DeleteElement = evt => {
 	})
 	.then(function (data) {
 		if(data.ok) {
-		 //   location.reload();
+		   location.reload();
 			console.log("Request success: ", data);
 		} else {
         	console.log("Request failure: ", data.json());
