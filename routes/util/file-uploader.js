@@ -24,13 +24,15 @@ function uploadFile(req) {
     })
 
     .on("file", function (field, file) {
-        // if (fs.existsSync(file.path)) {
-        //     fieldForm[field] = filename;
-        //     fs.renameSync(file.path, form.uploadDir + "/" + filename);
-        // }
+        if (fs.existsSync(file.path)) {
+            fieldForm[field] = fieldForm.id + "-" + file.name;
+            // fs.renameSync(file.path, form.uploadDir + "/" +  fieldForm.id + "-" + filename);
+        }
     })
     .on('fileBegin', function (name, file) {
+      console.warn(name, file);
       const [fileName, fileExt] = file.name.split('.');
+      // fieldForm[name] = filename;
       file.path = form.uploadDir + "/" + fieldForm.id + "-" + fileName + "." + fileExt;
     })
 

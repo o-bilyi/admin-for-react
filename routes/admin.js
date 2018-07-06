@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const db      = require("./util/data-base");
+const db = require("./util/data-base");
 
 router.route("/").get((req, res) => {
     res.render("index");

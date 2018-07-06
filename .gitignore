@@ -2,5 +2,5 @@
 ### Node template
 
 # Dependency directories
-/.idea/
-node_modules/
+/.idea
+node_modules
