@@ -1,5 +1,6 @@
-const router = require("express").Router();
 const db = require("./util/data-base");
+const nodemailer = require("nodemailer");
+const router = require("express").Router();
 const uploader = require("./util/file-uploader");
 const deleteImages = require("./util/delete-image");
 
@@ -17,9 +18,10 @@ router.route("/users")
         });
     })
     .delete((request, response) => {
-        const delatetElem = db.allData.users.find(i => i.id = request.body);
+        const id = request.body.id;
+        const delatetElem = db.allData.users.find(i => i.id === id);
         deleteImages(delatetElem.img, delatetElem["preview-img"]).then(() => {
-            db.removeUser(request.body).then(() => response.send("ok"));
+            db.removeUser(id).then(() => response.send("ok"));
         });
     })
 
@@ -38,10 +40,9 @@ router.route("/projects")
     })
     .delete((request, response) => {
         const id = request.body.id;
-        const delatetElem = db.allData.projects.find(i => i.id = id);
+        const delatetElem = db.allData.projects.find(i => i.id === id);
         console.warn(delatetElem);
         deleteImages(delatetElem.img, delatetElem.previewImg).then(() => {
-            // db.removeProject(request.headers.id).then(() =>  console.warn('ok'));
             db.removeProject(id).then(() =>  response.send('ok'));
         });
     });
@@ -60,9 +61,10 @@ router.route("/posts")
         });
     })
     .delete((request, response) => {
-        const delatetElem = db.allData.posts.find(i => i.id = request.body);
+        const id = request.body.id;
+        const delatetElem = db.allData.posts.find(i => i.id === id);
         deleteImages(delatetElem.img, delatetElem["preview-img"]).then(() => {
-            db.removePost(request.body).then(() => response.send("ok"));
+            db.removePost(id).then(() => response.send("ok"));
         });
     });
 
@@ -79,5 +81,40 @@ router.route("/contacts")
         res.redirect("/admin/contacts", {errors: "some error"});
       });
     })
+
+router.route("/sendMessage")
+  .post((req, res) => {
+    new Promise( (result, reject) => {
+      let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        secure: false,
+        port: 25,
+        auth: {
+          user: 'beluy845@gmail.com',
+          pass: 'beluy625436',
+        },
+        tls: {
+          rejectUnauthorized: false
+        }
+      });
+      let mailOptions = {
+        from: "Messages on Node server",
+        to: "o.d.bilyi@gmail.com",
+        subject: "New Messages",
+        text: `"Wow this tutorial is amazing: "
+        user : ${req.body.user}
+        email: ${req.body.email}
+        site: ${req.body.site}`
+      };
+      transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          return reject(error);
+        }
+        console.log('Email sent: ' + info.response);
+        res(true);
+        result(true);
+      });
+    })
+  })
 
 module.exports = router;

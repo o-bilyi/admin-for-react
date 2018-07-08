@@ -28,7 +28,6 @@ const setData = (to, data) => {
 
 const removeData = (to, data) => {
     return new Promise((res, rej) => {
-        console.warn(data, " remove-data");
         allData[to] = allData[to].filter(item => {
             return item.id !== data;
         });
