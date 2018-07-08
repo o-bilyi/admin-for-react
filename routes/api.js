@@ -111,7 +111,7 @@ router.route("/sendMessage")
           return reject(error);
         }
         console.log('Email sent: ' + info.response);
-        res(true);
+        res.send("ok");
         result(true);
       });
     })
