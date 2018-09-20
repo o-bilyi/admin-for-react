@@ -1,4 +1,3 @@
-const cookieParser = require("cookie-parser");
 const router = require("express").Router();
 const db = require("./util/data-base");
 

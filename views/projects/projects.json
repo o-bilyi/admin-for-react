@@ -1,9 +1,51 @@
 [
   {
-    "id": "1531371481334",
+    "id": "1531373392285",
     "name": "ELITE AUTO",
     "link": "https://www.eliteauto.com.ua/",
-    "img": "1531371481334-eliteAuto.jpg",
-    "previewImg": "1531371481334-eliteAuto_preview.jpg"
+    "img": "1531373392285-eliteAuto.jpg",
+    "previewImg": "1531373392285-eliteAuto_preview.jpg"
+  },
+  {
+    "id": "1531373445723",
+    "name": "RIVOLI",
+    "link": "http://rivoli.shade-design.com.ua/",
+    "img": "1531373445723-rivoli.jpg",
+    "previewImg": "1531373445723-rivoli_preview.jpg"
+  },
+  {
+    "id": "1531373512229",
+    "name": "SMM",
+    "link": "http://smmcoffee.it/",
+    "img": "1531373512229-coffee.jpg",
+    "previewImg": "1531373512229-smm_preview.jpg"
+  },
+  {
+    "id": "1531373855546",
+    "name": "GAZPROM NEFT",
+    "link": "http://www.gazprom-neft.ru/",
+    "img": "1531373855546-gazz.jpg",
+    "previewImg": "1531373855546-gazprom-neft_preview.png"
+  },
+  {
+    "id": "1531373888886",
+    "name": "ADVOCATE",
+    "link": "http://www.advocate-grinchenko.com.ua/",
+    "img": "1531373888886-attorney.jpg",
+    "previewImg": "1531373888886-attorney_preview.jpg"
+  },
+  {
+    "id": "1531374087072",
+    "name": "Nimfa",
+    "link": "http://nimpha.ua/",
+    "img": "1531374087072-nimfa.png",
+    "previewImg": "1531374087072-nimpha_preview.png"
+  },
+  {
+    "id": "1531374139909",
+    "name": "promo",
+    "link": "",
+    "img": "1531374139909-PromoFinance.jpg",
+    "previewImg": "1531374139909-promo_preview.png"
   }
 ]
