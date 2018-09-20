@@ -1,30 +1,9 @@
 [
   {
-    "id": "1530940696114",
-    "name": "1",
-    "link": "1",
-    "img": "1530940696114-attorney.png",
-    "previewImg": "1530940696114-consult_group.jpg"
-  },
-  {
-    "id": "1530940703348",
-    "name": "2",
-    "link": "2",
-    "img": "1530940703348-deks.jpg",
-    "previewImg": "1530940703348-eliteAuto.jpg"
-  },
-  {
-    "id": "1530940711275",
-    "name": "3",
-    "link": "3",
-    "img": "1530940711275-gaz_prom.jpg",
-    "previewImg": "1530940711275-milioner.jpg"
-  },
-  {
-    "id": "1530940720654",
-    "name": "4",
-    "link": "4",
-    "img": "1530940720654-rideIq.jpg",
-    "previewImg": "1530940720654-rivoli.jpg"
+    "id": "1531371481334",
+    "name": "ELITE AUTO",
+    "link": "https://www.eliteauto.com.ua/",
+    "img": "1531371481334-eliteAuto.jpg",
+    "previewImg": "1531371481334-eliteAuto_preview.jpg"
   }
 ]
