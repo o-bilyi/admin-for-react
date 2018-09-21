@@ -2,10 +2,8 @@ const modalForm = document.querySelector('.modal-form');
 const activeItemMenu = document.querySelectorAll('.menu-item');
 const showImageButton = document.querySelectorAll('.show-image-button');
 const showModalFormButton = document.querySelectorAll('.show-modal-form');
-const showPreviewImageButton = document.querySelectorAll(
-  '.show-preview-button');
-const deleteElement = document.querySelectorAll(
-  '.delete-element, .change-element');
+const showPreviewImageButton = document.querySelectorAll('.show-preview-button');
+const deleteElement = document.querySelectorAll('.delete-element, .change-element');
 
 const DeleteElement = evt => {
   const dataId = evt.target.dataset.id;

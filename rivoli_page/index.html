@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/header.css">
+    <title>Rivoli</title>
+</head>
+<body>
+<div class="wrapper conference-hall">
+    <header>
+        <div class="middle-text">
+            <div class="logo">
+                <a href="/"><img src="./img/Rivoli_full.svg" alt="rivoli"></a>
+                <h3>conference hall</h3>
+            </div>
+            <p>Індивідуальний підхід до кожного замовлення дозволяє нам вибрати ідеальний<br>варіант обслуговування
+                будь-якої події - від організації харчування масштабної<br>прес-конференції до індивідуального
+                обслуговування приватних бізнес-зустрічей.</p>
+        </div>
+        <div class="scroll-down">
+            <a href="#" id="down"></a>
+            <span>click to continue</span>
+        </div>
+    </header>
+    <main id="main">
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="float-container">
+                <a href="#" class="toggle-menu"><span></span></a>
+                <a href="#book" data-toggle="modal" data-target="#book" class="book-a-room">
+                    <span class="parallelogram"><img src="./img/key.svg" alt="key"></span>
+                    <span class="text">Забронювати номер</span>
+                </a>
+                <a href="/" class="logo">
+                    <img src="./img/Rivoli_full.svg" alt="Rivoli">
+                </a>
+            </div>
+        </div>
+        <aside class="active" id="aside">
+            <div class="logo">
+                <a href="/">
+                    <img src="./img/Rivoli_full.svg" class="hidden-mobile" alt="Rivoli">
+                    <img src="./img/rivoli-logo-small.svg" class="show-mobile" alt="Rivoli">
+                </a>
+                <h3>conference hall</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./views/hotel.html" title="Rivoli city Club Hotel" class="hotel">
+                        <img src="./img/3d-building_2.svg" class="hidden-img" alt="Rivoli city Club Hotel">
+                        <img src="./img/3d-building.svg" class="hover-img" alt="Rivoli city Club Hotel">
+                        <span>Rivoli <i>city Club Hotel</i></span>
+                    </a></li>
+                    <li><a href="./views/pizzeria.html" title="Dal forno pizzeria" class="pizza">
+                        <img src="./img/pizza-blue.svg" class="hidden-img" alt="Dal forno pizzeria">
+                        <img src="./img/pizza-white.svg" class="hover-img" alt="Dal forno pizzeria">
+                        <span>Dal forno <i>pizzeria</i></span>
+                    </a></li>
+                    <li><a href="./views/restaurant.html" title="Rivoli Restaurant" class="res">
+                        <img src="./img/restaurant-blue.svg" class="hidden-img" alt="Rivoli Restaurant">
+                        <img src="./img/restaurant-white.svg" class="hover-img" alt="Rivoli Restaurant">
+                        <span>Rivoli <i>Restaurant</i></span>
+                    </a></li>
+                    <li><a href="/" class="conf" title="Conference Hall">
+                        <img src="./img/presentation-blue.svg" class="hidden-img" alt="Conference Hall">
+                        <img src="./img/presentation-white.svg" class="hover-img" alt="Conference Hall">
+                        <span>Conference <i>Hall</i></span>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="padding-container">
+                <div class="mobile-flex">
+                    <div class="left">
+                        <div class="number">
+                            <p><a href="tel:+38 (050) 38 20 222">+38 (050) 38 20 222</a></p>
+                            <a href="tel:+38 (068) 38 20 222">+38 (068) 38 20 222</a>
+                        </div>
+                        <address>
+                            <p>м.Чернівці Глибоцький р-н.,</p>
+                            <p>с.Чагор, вул Незалежності 2</p>
+                        </address>
+                    </div>
+                    <div class="right">
+                        <div class="social">
+                            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="close-nav" title="Zoom menu">
+                <img src="./img/button-of-two-arrows.svg" alt="icon-close">
+            </a>
+            <div class="lang">
+                <a href="#" id="en">EN</a>
+                <a href="#" id="ru">RU</a>
+                <a href="#" id="ua">UA</a>
+            </div>
+            <span id="tooltip">Натисніть, щоб<br>відкрити меню</span>
+        </aside>
+        <div class="content">
+            <div data-wow-offset="0" class="wow animated fadeInUp width-container">
+                <div class="conf-hall">
+                    <div class="img-container">
+                        <img src="./img/conf-hall/conf-hall.jpg" alt="conference hall">
+                        <div class="position-img">
+                            <h5>Конференц зал</h5>
+                        </div>
+                        <div class="flex-container icon-container">
+                            <div data-wow-offset="140" data-wow-duration=".3s" class="wow animated fadeInDown icon">
+                                <img src="./img/projector.svg" alt="мультимедійний проектор">
+                                <h6>мультимедійний<br>проектор</h6>
+                            </div>
+                            <div data-wow-offset="140" data-wow-duration=".6s" class="wow animated fadeInDown icon">
+                                <img src="./img/flip-chart.svg" alt="зручний Фліпчарт">
+                                <h6>зручний<br>Фліпчарт</h6>
+                            </div>
+                            <div data-wow-offset="140" data-wow-duration=".9s" class="wow animated fadeInDown icon">
+                                <img src="./img/presentation-white.svg" alt="сучасний Екран">
+                                <h6>сучасний<br>Екран</h6>
+                            </div>
+                            <div data-wow-offset="140" data-wow-duration="1.2s" class="wow animated fadeInDown icon">
+                                <img src="./img/laser-pointer.svg" alt="електронна указка">
+                                <h6>електронна<br>указка</h6>
+                            </div>
+                            <div data-wow-offset="140" data-wow-duration="1.5s" class="wow animated fadeInDown icon">
+                                <img src="./img/microphone.svg" alt="мікрофон та колонки">
+                                <h6>мікрофон та<br>колонки</h6>
+                            </div>
+                            <div data-wow-offset="140" data-wow-duration="1.5s" class="wow animated fadeInDown icon">
+                                <img src="./img/connection.svg" alt="точка доступу WI-FI">
+                                <h6>точка доступу<br>WI-FI</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Перевагою готельно-ресторанного комплексу «Rivoli city club» є наявність конференц залу та
+                        кімнати
+                        для приватних переговорів.</p>
+                    <p>Конференц зал ідеально підходить для організації масштабних семінарів, конференцій, тренінгів та
+                        ділового спілкування будь-якого формату адже може вмістити до 120 осіб одночасно. Сервіс Rivoli
+                        City
+                        Club обов'язково буде оцінений Вашими партнерами та співробітниками. Кавові перерви,
+                        бізнес-ланчі,
+                        фуршети, банкети, ділові сніданки та вечері.</p>
+                    <h4>При замовленні формату «Цілий день +
+                        проживання та харчування» - діє гнучка система знижок</h4>
+                    <div class="flex-container price">
+                        <div class="capacity item">
+                            <div class="container-item">
+                                <h5 class="title">Місткість</h5>
+                                <p class="description">120 осіб</p>
+                            </div>
+                        </div>
+                        <div class="one-hour item">
+                            <div class="container-item">
+                                <h5 class="title">1 год</h5>
+                                <p class="description">350 грн</p>
+                            </div>
+                        </div>
+                        <div class="eight-hours item">
+                            <div class="container-item">
+                                <h5 class="title">8 год</h5>
+                                <p class="description">2700 грн</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container vip-room">
+                    <div class="description">
+                        <p>Затишна кімната переговорів призначена для проведення ділових зустрічей за участі 10 осіб.
+                            Тут, у вишуканій та спокійній атмосфері, Ви з легкістю можете організувати приватну зустріч
+                            з партнерами за круглим столом. </p>
+                        <h6>Особливістю даної кімнати є вихід на відкриту терасу, з
+                            якої відкривається надзвичайний панорамний краєвид</h6>
+                        <a href="#form" class="scroll application btn-2"><span>відправити заявку</span></a>
+                    </div>
+                    <div class="img-container">
+                        <img src="./img/conf-hall/vip-room.png" alt="vip-room">
+                        <div class="position-img">
+                            <h5>Vip-кімната</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panorama">
+                <div class="button-container">
+                    <div  data-wow-duration="2s" class="wow animated rubberBand button">
+                        <div class="text">
+                            <p>більше про відпочинок в </p>
+                            <h3>Rivoli City Club Hotel</h3>
+                        </div>
+                        <div class="link">
+                            <a href="./views/hotel.html">детальніше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-to">
+                <div class="title">
+                    <p>ласкаво просимо до</p>
+                    <h3 class="flex-container"><span>Rivoli City Club Hotel</span></h3>
+                </div>
+                <address class="flex-container">
+                    <div class="item">
+                        <p><a href="tel:+38 (050) 38 20 222">+38 (050) 38 20 222</a></p>
+                        <p><a href="tel:+38 (068) 38 20 222">+38 (068) 38 20 222</a></p>
+                    </div>
+                    <div class="item">
+                        <p>м.Чернівці Глибоцький р-н., с.Чагор</p>
+                        <p>вул Незалежності 2</p>
+                    </div>
+                    <div class="item">
+                        <p><a href="mailto:info.rivoli.ch@gmail.com">info.rivoli.ch@gmail.com</a></p>
+                    </div>
+                </address>
+            </div>
+            <div class="map">
+                <div id="map"></div>
+                <form method="post" action="libs/send.php" class="wow animated fadeInRight" id="form">
+                    <div class="position-img">
+                        <h5>Напишіть нам</h5>
+                    </div>
+                    <div class="container-form">
+                        <div class="input-container">
+                            <input type="text" name="userName" placeholder="Ім'я" required>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-container">
+                            <input type="number" min="0" name="tel" placeholder="Телефон" required>
+                        </div>
+                        <div class="input-container">
+                            <textarea name="description" placeholder="Ваш коментар"></textarea>
+                        </div>
+                        <button type="submit">відправити повідомлення</button>
+                    </div>
+                </form>
+            </div>
+            <div class="copyright">
+                <div class="flex-container">
+                    <div class="left">
+                        <p>© 2017 All right reserved. Rivoli-hotel.com.ua</p>
+                    </div>
+                    <div class="border"></div>
+                    <div class="right">
+                        <p>site management by <a href="http://www.shade-designs.com.ua/" target="_blank">shade-designs.com.ua</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<div id="popupMessage">
+    <span>Message sent</span>
+</div>
+<div id="preload">
+    <div class="lds-dual-ring">
+        <div class="ring"></div>
+        <div class="ring"></div>
+    </div>
+</div>
+<!--modals ==============>-->
+<div id="book" class="modal fade in" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="head-modal">
+                <a href="#" data-dismiss="modal" class="close-modal"><img src="../img/cross.svg" alt="close"></a>
+            </div>
+            <div class="modal-body">
+                <div id="_pmsWidget_"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modals ==============>-->
+<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="./js/all.min.js"></script>
+<script src="https://pmscloud.com/app/pbb/js/pmsbook.js"></script>
+<script>
+    var Pms = new _Pms('879789'),
+        params = {
+            hotelId: '879789', button: '5505024', height: 330, textColor: '#fff', backgroundColor: '#3e4f64',
+            hostname: "https://pmscloud.com/app/form"
+        };
+    Pms.widget("_pmsWidget_", params);
+</script>
+</body>
+</html>

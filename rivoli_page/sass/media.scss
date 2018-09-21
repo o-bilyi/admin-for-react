@@ -1,0 +1,1088 @@
+@media only screen and (min-width: 1920px) {
+  .about-restaurant-container {
+    min-height: 900px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .scroll-down {
+    a {
+      width: 35px;
+      height: 57px;
+      &:before {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1370px) {
+  .food-container{
+    min-height: 1240px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hotel {
+    video {
+      display: block;
+    }
+    header {
+      background: none;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-restaurant-container {
+    background: none;
+    padding-top: 50px;
+    margin-bottom: 120px;
+    .about-restaurant {
+      margin: auto;
+      position: relative;
+      bottom: 25px;
+    }
+    .img-full-mobile{
+      display: block;
+    }
+  }
+
+  .scroll-down {
+    bottom: 60px;
+  }
+
+  #book-content {
+    display: none;
+  }
+
+  .middle-text {
+    max-width: 490px;
+  }
+
+  header {
+    .logo {
+      h3 {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .rooms {
+    .padding-container {
+      padding: 15px 15px 0;
+    }
+    .position-img {
+      left: 15%;
+      right: inherit;
+    }
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  aside {
+    transform: translateX(-300px);
+    .close-nav {
+      display: none;
+    }
+  }
+
+  aside.active {
+    padding-top: 80px;
+
+    .social {
+      a {
+        height: 30px;
+        width: 30px;
+        line-height: 29px;
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+
+    address {
+      padding: 10px 0;
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .number {
+      a {
+        line-height: 14px;
+      }
+    }
+
+    .padding-container {
+      bottom: 49px;
+    }
+
+    .lang {
+      margin-top: 5px;
+    }
+
+    .lang, .number {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .width-container {
+    padding: 0 15px;
+  }
+
+  .rooms {
+    & > .flex-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .room {
+      display: flex;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 25px;
+      height: auto;
+      img {
+        width: 50%;
+      }
+    }
+
+    .hover-block {
+      position: static;
+      opacity: 1;
+      width: 50%;
+    }
+  }
+
+  .conference-hall {
+    header {
+      br {
+        display: none;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .conference-hall {
+    header{
+      background-size: 100% 100%;
+    }
+  }
+
+  .vip-room {
+    .img-container {
+      margin-right: 0;
+    }
+  }
+
+  .welcome-to {
+    h3 {
+      &:before, &:after {
+        width: 28%;
+      }
+    }
+  }
+
+  .breakfast-included:before,
+  .breakfast-included:after {
+    display: none;
+  }
+  .breakfast-included {
+    h4 {
+      font-size: 24px;
+    }
+    .borders {
+      &:before, &:after {
+        width: 15%;
+      }
+    }
+  }
+
+  .special-offer-restaurant {
+    padding: 0;
+    &:before, &:after {
+      display: none;
+    }
+  }
+
+  .about-restaurant-container,
+  .about-hotel-container {
+    p {
+      font-size: 13px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .food-container {
+    margin-top: 67px;
+    margin-bottom: 135px;
+    min-height: 1225px;
+    .pizza, .salat {
+      display: block;
+    }
+    .position-img {
+      display: none;
+    }
+    .description {
+      padding: 15px 21px 30px;
+    }
+  }
+
+  .map {
+    form {
+      right: 10px;
+    }
+  }
+
+  .fancybox-nav {
+    height: 85px;
+    width: 15px;
+    span {
+      width: 35px;
+    }
+  }
+
+  .fancybox-next {
+    span {
+      right: -10px;
+    }
+  }
+
+  .fancybox-prev {
+    span {
+      left: -10px;
+    }
+  }
+
+  .fancybox-close {
+    height: 30px;
+    width: 30px;
+    background-size: 15px;
+  }
+
+  .dalForno-pizza {
+    header {
+      .logo {
+        max-width: 145px;
+        margin: 0 auto 45px;
+      }
+    }
+    .middle-text {
+      p {
+        max-width: 320px;
+        margin: auto;
+        padding: 10px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+
+    .mobile-menu {
+      .logo {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+  .dalForno-pizza{
+    header{
+      .logo{
+        max-width: 80px;
+        margin: 0 auto 10px;
+      }
+    }
+    aside.active{
+      .logo{
+        display: none;
+      }
+    }
+  }
+
+  .conference-hall {
+    header{
+      background: url("../img/conference-hall-bg-mobile.jpg")no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+
+  aside {
+    &.active {
+      padding-top: 60px;
+
+      .logo {
+        display: none;
+        max-width: 100px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 10px;
+      }
+
+      nav {
+        a {
+          padding: 5px 0 5px 15px;
+        }
+      }
+
+      .number {
+        margin-bottom: 10px;
+      }
+
+      .social {
+        margin: 9px 0 10px;
+      }
+    }
+  }
+
+  .conference-hall {
+    header {
+      .logo {
+      }
+    }
+  }
+
+  .middle-text {
+    max-width: 375px;
+  }
+
+  .mobile-menu {
+    .book-a-room {
+      max-width: 187px;
+      .text {
+        font-size: 9px;
+        padding-right: 8px;
+      }
+      .parallelogram {
+        width: 45px;
+      }
+      img {
+        max-width: 23px;
+      }
+    }
+
+    .logo {
+      max-width: 100%;
+      margin-left: 50px;
+      margin-right: 175px;
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+
+  .content {
+    .icon-container {
+      flex-wrap: wrap;
+      max-width: 400px;
+      margin: -160px auto 25px;
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: rgba(232, 232, 232, 0.5);
+      .icon {
+        width: 33.3%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .vip-room {
+    flex-direction: column-reverse;
+
+    .description, .img-container {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .img-container {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .welcome-to {
+    min-height: 570px;
+    address {
+      flex-direction: column;
+    }
+    .item {
+      &:nth-child(2) {
+        margin: 15px 0;
+        padding: 15px 0;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+      }
+    }
+  }
+
+  .conf-hall {
+    .price {
+      .container-item {
+        max-width: 60px;
+      }
+      .title {
+        font-size: 12px;
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .panorama {
+    position: relative;
+    .button-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+    }
+
+    .button {
+      max-width: 100%;
+      height: 60px;
+      min-height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-size: cover;
+      padding: 0 20px;
+      background: $dark-blue;
+    }
+
+    .link {
+      max-width: 175px;
+      width: 100%;
+    }
+    p {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 5px 0 0;
+    }
+  }
+
+  .map {
+    form {
+      top: -300px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: inherit;
+    }
+  }
+
+  .copyright {
+    .flex-container {
+      flex-direction: column;
+      height: auto;
+      max-width: 100%;
+    }
+    .left {
+      border-bottom: 1px solid #e8e8e8;
+      width: 100%;
+      text-align: center;
+    }
+    .left, .right {
+      padding: 10px 0;
+    }
+    .border {
+      display: none;
+    }
+  }
+
+  .food-container {
+    h5 {
+      line-height: 12px;
+      font-size: 11px;
+    }
+    h4 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .special-offer {
+    background: url("../img/restaurant/mobile-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    .flex-container {
+      flex-direction: column;
+    }
+
+    .position-block {
+      padding-top: 95px;
+      position: static;
+    }
+
+    .left {
+      margin-bottom: 40px;
+    }
+
+  }
+
+  .rooms {
+    .room {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+    .hover-block {
+      min-height: 400px;
+      width: 100%;
+    }
+    .padding-container {
+      padding: 15px 15px 0;
+    }
+    .position-img {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .about-hotel-container {
+    margin: 0 auto 40px;
+    .item {
+      width: 50%;
+      margin-bottom: 15px;
+    }
+    .about-hotel {
+      padding: 45px 15px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
+
+  .about-restaurant-container, .about-hotel-container {
+    p {
+      font-size: 12px;
+    }
+  }
+
+
+
+  .special-offer-restaurant {
+    flex-direction: column;
+    .description {
+      margin-top: 10px;
+    }
+    .img-container {
+      margin-right: 0;
+    }
+  }
+
+  .restaurant header, header {
+    .logo {
+      max-width: 150px;
+      margin: auto;
+      h3 {
+        font-size: 12px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .hotel {
+    .link-book {
+      font-size: 12px;
+      line-height: 30px;
+      max-width: 180px;
+    }
+  }
+
+  .scroll-down {
+    span {
+      font-size: 11px;
+    }
+    a {
+      margin: 0 auto 5px;
+      width: 22px;
+      height: 37px;
+      &:before {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  .about-restaurant-container .posit-img,
+  .about-hotel-container .posit-img {
+    max-width: 35px;
+    top: -4px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .content {
+    .icon-container {
+      flex-wrap: wrap;
+      max-width: 235px;
+      margin: 30px auto 25px;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+      .icon {
+        width: 50%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .panorama {
+    .button {
+      padding: 10px 0;
+      height: 100px;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .text {
+      margin-bottom: 10px;
+    }
+  }
+
+  .welcome-to {
+    .title {
+      h3 {
+        &:before, &:after {
+          width: 12%;
+        }
+      }
+    }
+  }
+
+  .dalForno-pizza {
+
+    .middle-text {
+      p {
+        max-width: 210px;
+        margin: auto;
+        padding: 5px;
+      }
+      span {
+        font-size: 10px;
+      }
+    }
+
+    aside.active{
+      .logo{
+        max-width: 70px;
+      }
+    }
+  }
+
+  .instagram {
+    .link-instagram {
+      margin-right: auto;
+    }
+  }
+
+  .about-restaurant-container {
+    padding-top: 40px;
+    .about-restaurant {
+      padding: 45px 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+
+    .title {
+      .logo {
+        max-width: 120px;
+      }
+    }
+
+  }
+
+  .hotel {
+    .content {
+      padding-top: 140px;
+    }
+  }
+
+  .about-hotel-container {
+    margin: 0 auto 140px;
+    .folder {
+      top: -95px;
+    }
+    .pillow {
+      bottom: -135px;
+      right: -100px;
+      top: inherit;
+    }
+  }
+
+  .special-offer {
+    h4 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    img {
+      max-width: 60px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .rooms {
+    .padding-container {
+      padding: 7px 7px 0;
+    }
+    .comfort-room,.description{
+      p,li{
+        font-size: 11px;
+      }
+    }
+    .link-option {
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+
+  aside.active .padding-container {
+    bottom: 30px;
+  }
+
+  .special-offer-restaurant {
+    img {
+      max-width: 175px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    h6 {
+      font-size: 18px;
+    }
+    p, a {
+      font-size: 12px;
+    }
+  }
+
+  .rooms .hover-block {
+    min-height: 330px;
+    width: 100%;
+  }
+
+  .breakfast-included {
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 12px;
+    }
+    img {
+      max-width: 40px;
+    }
+    .borders {
+      &:before, &:after {
+        width: 10%;
+      }
+      &:before {
+        margin-left: -15px;
+      }
+      &:after {
+        margin-right: -15px;
+      }
+    }
+  }
+
+  .mobile-menu {
+    .float-container {
+      line-height: 40px;
+      height: 40px;
+    }
+    .book-a-room {
+      .text, .parallelogram {
+        line-height: 34px;
+      }
+    }
+    .logo {
+      margin-left: 50px;
+      margin-right: 175px;
+    }
+  }
+
+  .conf-hall {
+    padding: 0;
+    margin-bottom: 90px;
+    border: none;
+    .price {
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+
+  .vip-room {
+    .img-container {
+      margin-top: -55px;
+    }
+  }
+
+  .modal .modal-dialog {
+    width: 320px;
+  }
+
+  .food-container{
+    background: url("../img/dalForno/food-mobile-2.png") no-repeat center;
+    background-size: cover;
+    min-height: 1225px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .about-hotel-container {
+    .pillow {
+      right: 0;
+    }
+  }
+  .rooms {
+    margin: 0 auto 20px;
+  }
+}
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+
+  .dalForno-pizza aside.active {
+    .logo {
+      max-width: 135px;
+      display: none;
+      h3 {
+        display: block;
+      }
+      a {
+        display: none;
+      }
+    }
+  }
+
+  aside {
+    &.active {
+      max-width: 460px;
+      width: 100%;
+      padding-top: 68px;
+
+      h3 {
+        font-size: 15px;
+      }
+
+      .logo {
+        max-width: 135px;
+        display: none;
+        a {
+          display: none;
+        }
+      }
+
+      nav {
+        margin: 25px 0;
+        a {
+          padding: 12px 0 6px 15px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        box-sizing: border-box;
+      }
+
+      li {
+        width: 50%;
+        box-sizing: border-box;
+        border-right: 1px solid #e8e8e8;
+        border-bottom: none;
+        &:nth-child(3), &:nth-child(4) {
+          border-top: 1px solid #e8e8e8;
+        }
+        &:first-child {
+          border-top: none;
+        }
+      }
+
+      .mobile-flex {
+        display: flex;
+        align-items: center;
+      }
+
+      .left, .right {
+        width: 50%;
+      }
+
+      .left {
+        box-sizing: border-box;
+        border-right: 1px solid #e8e8e8;
+      }
+
+      .padding-container {
+        margin: 0;
+        bottom: 75px;
+      }
+
+      address {
+        padding: 0;
+        border: none;
+      }
+
+      address, .number {
+        a, p {
+          font-size: 12px;
+        }
+      }
+
+      .number {
+        margin-bottom: 10px;
+        a {
+          &:first-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .social {
+        margin: 0;
+        a {
+          margin: 0 5px;
+          width: 30px;
+          height: 30px;
+          line-height: 29px;
+        }
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  header {
+    p {
+      font-size: 12px;
+    }
+    .logo {
+      max-width: 150px;
+      margin: auto;
+      h3 {
+        font-size: 15px;
+        margin: 10px 0 15px;
+      }
+    }
+  }
+
+  .middle-text {
+    max-width: 400px;
+    transform: translateY(-75%);
+  }
+
+  aside {
+    &.active {
+
+    }
+  }
+}
+
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+  aside {
+    &.active {
+      .padding-container {
+        bottom: 60px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  .middle-text {
+    transform: translateY(-85%);
+  }
+  .hotel {
+    .logo {
+      max-width: 105px;
+      h3 {
+        font-size: 12px;
+        margin: 0 0 15px;
+      }
+    }
+    .link-book {
+      margin: 15px auto 0;
+    }
+    .max-width {
+      max-width: 300px;
+    }
+  }
+
+  aside {
+    &.active {
+      .padding-container {
+        bottom: 65px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  aside.active {
+    padding-top: 60px;
+    .padding-container {
+      bottom: 45px;
+    }
+    nav {
+      margin: 15px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+  aside {
+    &.active {
+      .padding-container {
+        bottom: 60px;
+      }
+      padding-top: 45px;
+    }
+  }
+}

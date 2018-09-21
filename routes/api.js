@@ -19,11 +19,11 @@ router.route("/users")
     })
     .delete((request, response) => {
         const id = request.body.id;
-        const delatetElem = db.allData.users.find(i => i.id === id);
-        deleteImages(delatetElem.img, delatetElem["preview-img"]).then(() => {
-            db.removeUser(id).then(() => response.send("ok"));
+        const deletedElem = db.allData.users.find(i => i.id === id);
+        deleteImages(deletedElem.img, deletedElem.previewImg).then(() => {
+            db.removeUser(id).then(() =>  response.send('ok'));
         });
-    })
+    });
 
 router.route("/projects")
     .get((req, res) => {
@@ -40,9 +40,8 @@ router.route("/projects")
     })
     .delete((request, response) => {
         const id = request.body.id;
-        const delatetElem = db.allData.projects.find(i => i.id === id);
-        console.warn(delatetElem);
-        deleteImages(delatetElem.img, delatetElem.previewImg).then(() => {
+        const deletedElem = db.allData.projects.find(i => i.id === id);
+        deleteImages(deletedElem.img, deletedElem.previewImg).then(() => {
             db.removeProject(id).then(() =>  response.send('ok'));
         });
     });
@@ -80,7 +79,7 @@ router.route("/contacts")
         console.warn(e);
         res.redirect("/admin/contacts", {errors: "some error"});
       });
-    })
+    });
 
 router.route("/sendMessage")
   .post((req, res) => {
@@ -101,7 +100,7 @@ router.route("/sendMessage")
         from: "Messages on Node server",
         to: "o.d.bilyi@gmail.com",
         subject: "New Messages",
-        text: `"Wow this tutorial is amazing: "
+        text: `
         user : ${req.body.user}
         email: ${req.body.email}
         site: ${req.body.site}`
@@ -115,6 +114,6 @@ router.route("/sendMessage")
         result(true);
       });
     })
-  })
+  });
 
 module.exports = router;

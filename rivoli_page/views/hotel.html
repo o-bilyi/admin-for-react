@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Rivoli</title>
+</head>
+<body>
+<div class="wrapper hotel">
+    <header>
+        <div class="position-header-text">
+            <div class="middle-text">
+                <div class="logo">
+                    <a href="hotel.html"><img src="../img/Rivoli_full-white.svg" alt="rivoli"></a>
+                    <h3>city club hotel</h3>
+                </div>
+                <div class="max-width">
+                    <p>Злагоджена праця всієї команди готелю та особлива увага до наших
+                        гостей зробить Ваш відпочинок у «Rivoli City Club Hotel» незабутнім.</p>
+                    <a href="#book" data-toggle="modal" data-target="#book"  class="link-book btn-2"><span>Забронювати номер</span></a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#" class="" id="down"></a>
+                <span>click to continue</span>
+            </div>
+        </div>
+        <video id="video" preload poster="../img/video-download.jpg" autoplay loop>
+            <source src="../video/video-8000.mp4" type="video/mp4">
+        </video>
+    </header>
+    <main id="main">
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="float-container">
+                <a href="#" class="toggle-menu"><span></span></a>
+                <a href="#book" data-toggle="modal" data-target="#book" class="scroll book-a-room">
+                    <span class="parallelogram"><img src="../img/key.svg" alt="key"></span>
+                    <span class="text">Забронювати номер</span>
+                </a>
+                <a href="/" class="logo">
+                    <img src="../img/Rivoli_full.svg" alt="Rivoli">
+                </a>
+            </div>
+        </div>
+        <aside class="active" id="aside">
+            <div class="logo">
+                <a href="hotel.html">
+                    <img src="../img/Rivoli_full.svg" class="hidden-mobile" alt="Rivoli">
+                    <img src="../img/rivoli-logo-small.svg" class="show-mobile" alt="Rivoli">
+                </a>
+                <h3>city club hotel</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="hotel.html" title="Rivoli city Club Hotel" class="hotel-link">
+                        <img src="../img/3d-building_2.svg" class="hidden-img" alt="Rivoli city Club Hotel">
+                        <img src="../img/3d-building.svg" class="hover-img" alt="Rivoli city Club Hotel">
+                        <span>Rivoli <i>city Club Hotel</i></span>
+                    </a></li>
+                    <li><a href="pizzeria.html" title="Dal forno pizzeria" class="pizza">
+                        <img src="../img/pizza-blue.svg" class="hidden-img" alt="Dal forno pizzeria">
+                        <img src="../img/pizza-white.svg" class="hover-img" alt="Dal forno pizzeria">
+                        <span>Dal forno <i>pizzeria</i></span>
+                    </a></li>
+                    <li><a href="restaurant.html" title="Rivoli Restaurant" class="res">
+                        <img src="../img/restaurant-blue.svg" class="hidden-img" alt="Rivoli Restaurant">
+                        <img src="../img/restaurant-white.svg" class="hover-img" alt="Rivoli Restaurant">
+                        <span>Rivoli <i>Restaurant</i></span>
+                    </a></li>
+                    <li><a href="/" class="conf" title="Conference Hall">
+                        <img src="../img/presentation-blue.svg" class="hidden-img" alt="Conference Hall">
+                        <img src="../img/presentation-white.svg" class="hover-img" alt="Conference Hall">
+                        <span>Conference <i>Hall</i></span>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="padding-container">
+                <div class="mobile-flex">
+                    <div class="left">
+                        <div class="number">
+                            <p><a href="tel:+38 (050) 38 20 222">+38 (050) 38 20 222</a></p>
+                            <a href="tel:+38 (068) 38 20 222">+38 (068) 38 20 222</a>
+                        </div>
+                        <address>
+                            <p>м.Чернівці Глибоцький р-н.,</p>
+                            <p>с.Чагор, вул Незалежності 2</p>
+                        </address>
+                    </div>
+                    <div class="right">
+                        <div class="social">
+                            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="close-nav" title="Zoom menu">
+                <img src="../img/button-of-two-arrows.svg" alt="icon-close">
+            </a>
+            <div class="lang">
+                <a href="#" id="en">EN</a>
+                <a href="#" id="ru">RU</a>
+                <a href="#" id="ua">UA</a>
+            </div>
+            <span id="tooltip">Натисніть, щоб<br>відкрити меню</span>
+        </aside>
+        <div class="content">
+            <a id="book-content" href="#book" data-toggle="modal" data-target="#book" class="book-a-room">
+                <span class="parallelogram"><img src="../img/key.svg" alt="key"></span>
+                <span class="text">Забронювати номер</span>
+            </a>
+            <div id="aboutHotel" class="about-hotel-container width-container">
+                <img src="../img/hotel/folder.png" alt="folder img" data-wow-duration="2s"
+                     class="wow animated fadeInLeft folder">
+                <img src="../img/hotel/pillow-2.png" alt="pillow img" data-wow-duration="2s"
+                     class="wow animated fadeInRight pillow">
+                <div data-wow-duration="1s" class="wow fadeInUp about-hotel">
+                    <img src="data:img/png;base64,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"
+                         alt="rivoli hotel" class="posit-img">
+                    <div class="title">
+                        <div class="logo">
+                            <a href="hotel.html"><img src="../img/Rivoli_full.svg" alt="rivoli"></a>
+                            <h3>City club hotel</h3>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p><span>«Rivoli Сity Сlub Hotel»</span> налічує 26 затишних номерів
+                            категорії стандарт, люкс та сімейний.</p>
+                        <p><span>До послуг гостей:</span> кондиціонер, телевізор з плоским екраном, телефон, по всій
+                            території
+                            комплексу працює безкоштовний Wi-Fi , сніданок, який входить у вартість проживання.</p>
+                        <p>Кожний номер облаштований всім необхідним для Вашого комфортного проживання,
+                            ванна кімната укомплектована феном, рушниками, халатом,
+                            тапками та необхідними туалетно-косметичними засобами.</p>
+                        <p><span>«Rivoli Сity Сlub Hotel»</span> не просто готель, а цілий готельний
+                            комплекс,
+                            який надає можливість не лише насолодитись відпочинком в затишних номерах, але й скуштувати
+                            <span>піцу власного приготування</span> прямо з печі, весело провести захід в
+                            <span>бенкетному залі</span> або ж скористатись послугами
+                            <span>конференц залу чи VIP-кімнати</span> для важливих переговорів.
+                        </p>
+
+                        <div class="flex-container">
+                            <div class="item">
+                                <img src="../img/3d-building_2.svg" alt="Rivoli hotel">
+                                <h4>Rivoli</h4>
+                                <h6>Hotel</h6>
+                            </div>
+                            <div class="item">
+                                <img src="../img/pizza-blue.svg" alt="Dal Forno Pizerria">
+                                <h4>Dal Forno</h4>
+                                <h6>Pizerria</h6>
+                            </div>
+                            <div class="item">
+                                <img src="../img/restaurant-blue.svg" alt="rivoli Restaurant">
+                                <h4>Rivoli</h4>
+                                <h6>Restaurant</h6>
+                            </div>
+                            <div class="item">
+                                <img src="../img/presentation-blue.svg" alt="Conference Hall">
+                                <h4>Conference</h4>
+                                <h6>Hall</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rooms" class="rooms">
+                <div class="flex-container">
+                    <div data-wow-duration=".5s" class="wow animated fadeInUp room">
+                        <div class="position-img">
+                            <h5>стандарт</h5>
+                        </div>
+                        <img src="../img/hotel/standart-room.jpg" alt="standart-room">
+                        <div class="hover-block">
+                            <div class="padding-container">
+                                <ul class="link-option flex-container">
+                                    <li class="active"><a data-toggle="tab" href="#description-room-1">опис номеру</a>
+                                    </li>
+                                    <li><a data-toggle="tab" href="#comfort-room-1">зручності</a></li>
+                                    <li><a href="#" class="standard-apartments">фото</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="description-room-1" class="tab-pane fade in active comfort-room">
+                                        <p>Стандартний однокімнатний номер для комфортного відпочинку (1 двохспальне
+                                            ліжко з можливістю додати 1 додаткове ліжко)
+                                            Послуги та зручності: Телефон, Кабельне телебачення, Сучасний смарт
+                                            телевізор, Кондиціонер, Опалення, Паркетна підлога, Душ, Туалет, Фен, Халат,
+                                            Тапочки, Туалетно-косметичні засоби, Послуга «дзвінок-будильник»
+                                            Площа номера: 21 м²</p>
+                                    </div>
+                                    <div id="comfort-room-1" class="tab-pane fade description">
+                                        <div class="flex-container">
+                                            <ul>
+                                                <li>- 1 кімната</li>
+                                                <li>- Площа номера: 21 м²</li>
+                                                <li>- 1 санвузл</li>
+                                                <li>- кондиціонер</li>
+                                                <li>- Опалення</li>
+                                                <li>- телефон</li>
+                                                <li>- звукоізоляція</li>
+                                                <li>- шафа</li>
+                                                <li>- щітка для взуття</li>
+                                                <li>- паркетна підлога</li>
+                                                <li>- послуга «дзвінок будильник»</li>
+                                            </ul>
+                                            <ul>
+                                                <li>- душ</li>
+                                                <li>- туалет</li>
+                                                <li>- фен</li>
+                                                <li>- халат</li>
+                                                <li>- тапочки</li>
+                                                <li>- туалетно-косметичні засоби</li>
+                                                <li>- Сучасний смарт телевізор</li>
+                                                <li>- Безкоштоаний Wi-Fi в номері</li>
+                                                <li>- Кабельне телебачення</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#book" data-toggle="modal" data-target="#book" class="book-a-room">забронювати номер</a>
+                        </div>
+                    </div>
+                    <div data-wow-duration="1s" class="wow animated fadeInUp room">
+                        <div class="position-img">
+                            <h5>сімейний</h5>
+                        </div>
+                        <img src="../img/hotel/family-room.jpg" alt="standart-room">
+                        <div class="hover-block">
+                            <div class="padding-container">
+                                <ul class="link-option flex-container">
+                                    <li class="active"><a data-toggle="tab" href="#description-room-2">опис номеру</a>
+                                    </li>
+                                    <li><a data-toggle="tab" href="#comfort-room-2">зручності</a></li>
+                                    <li><a href="#" class="family-apartments">фото</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="description-room-2" class="tab-pane fade in active comfort-room">
+                                        <p>Просторий 2х кімнатний номер для сімейного відпочинку. (1 двохспальне ліжко +
+                                            2 односпальних з можливістю додати 1 додаткове ліжко).
+                                            Послуги та зручності: Телефон, Кабельне телебачення, Сучасний смарт
+                                            телевізор, Сейф, Кондиціонер, Опалення, Паркетна підлога, Душ, Туалет, Фен,
+                                            Халат, Тапочки, Туалетно-косметичні засоби, Послуга «дзвінок-будильник»
+                                            Площа номера: 42 м²</p>
+                                    </div>
+                                    <div id="comfort-room-2" class="tab-pane fade description">
+                                        <div class="flex-container">
+                                            <ul>
+                                                <li>- 2 кімнати</li>
+                                                <li>- Площа номера: 42 м²</li>
+                                                <li>- 2 санвузли</li>
+                                                <li>- кондиціонер</li>
+                                                <li>- Опалення</li>
+                                                <li>- 2 телефони</li>
+                                                <li>- звукоізоляція</li>
+                                                <li>- шафа</li>
+                                                <li>- сейф</li>
+                                                <li>- щітка для взуття</li>
+                                                <li>- паркетна підлога</li>
+                                                <li>- Послуга «дзвінок-будильник»</li>
+                                            </ul>
+                                            <ul>
+                                                <li>- душ</li>
+                                                <li>- туалет</li>
+                                                <li>- фен</li>
+                                                <li>- халат</li>
+                                                <li>- тапочки</li>
+                                                <li>- туалетно-косметичні засоби</li>
+                                                <li>- Сучасний смарт телевізор</li>
+                                                <li>- безкоштовний Wi-Fi в номері</li>
+                                                <li>- Кабельне телебачення</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#book" data-toggle="modal" data-target="#book" class="book-a-room">забронювати
+                                номер</a>
+                        </div>
+                    </div>
+                    <div data-wow-duration="1.5s" class="wow animated fadeInUp room">
+                        <div class="position-img">
+                            <h5>люкс</h5>
+                        </div>
+                        <img src="../img/hotel/lux-room.jpg" alt="standart-room">
+                        <div class="hover-block">
+                            <div class="padding-container">
+                                <ul class="link-option flex-container">
+                                    <li class="active"><a data-toggle="tab" href="#description-room-3">опис номеру</a>
+                                    </li>
+                                    <li><a data-toggle="tab" href="#comfort-room-3">зручності</a></li>
+                                    <li><a href="#" class="lux-apartments">фото</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="description-room-3" class="tab-pane fade in active comfort-room">
+                                        <p>Даний люкс розділений на дві функціональні зони. Дизайн цього номеру –
+                                            поєднання
+                                            розкішного та затишного, що відрізняє його від решти номерів. Також у номері
+                                            є зручні
+                                            крісла, банкетка та робочий стіл, що зроблять ваше перебування в готелі
+                                            більш
+                                            зручнішим.
+                                            Послуги та зручності: Телефон, кабельне телебачення , сучасний смарт
+                                            телевізор, Сейф,
+                                            Кондиціонер, Рабочий стіл, банкетка, отоплення, Паркетна підлога, Ванна,
+                                            Фен, Халат,
+                                            Туалетно-косметичні засоби , Туалет, Біде, Тапочки, послуга «дзвінок
+                                            будильник» Площа
+                                            номера: 37 м²</p>
+                                    </div>
+                                    <div id="comfort-room-3" class="tab-pane fade description">
+                                        <div class="flex-container">
+                                            <ul>
+                                                <li>- дві функціональні зони</li>
+                                                <li>- площа номера: 37 м²</li>
+                                                <li>- 1 санвузол</li>
+                                                <li>- Банкетка</li>
+                                                <li>- робочий стіл</li>
+                                                <li>- кондиціонер</li>
+                                                <li>- опалення</li>
+                                                <li>- телефон</li>
+                                                <li>- Звукоізоляція</li>
+                                                <li>- гардероб / шафа</li>
+                                                <li>- сейф</li>
+                                                <li>- щітка для взуття</li>
+                                                <li>- паркетна підлога</li>
+                                            </ul>
+                                            <ul>
+                                                <li>- послуга «дзвінок будильник»</li>
+                                                <li>- душ</li>
+                                                <li>- туалет</li>
+                                                <li>- біде</li>
+                                                <li>- фен</li>
+                                                <li>- халат</li>
+                                                <li>- тапочки</li>
+                                                <li>- туалетно-косметичні засоби</li>
+                                                <li>- безкоштовний Wi-Fi в номері</li>
+                                                <li>- кабельне телебачення</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#book" data-toggle="modal" data-target="#book" class="book-a-room">забронювати
+                                номер</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="breakfast-included">
+                    <div class="borders">
+                        <div class="text-container">
+                            <img src="../img/hotel/tray.png" alt="tray">
+                            <div class="text">
+                                <p>на кожну особу в номер</p>
+                                <h4>сніданок включено</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wow animated fadeIn special-offer-restaurant flex-container">
+                <div class="wow animated fadeInLeft img-container">
+                    <img src="../img/hotel/card.png" alt="card">
+                </div>
+                <div class="wow animated fadeInRight description">
+                    <h3>Спеціальна пропозиція</h3>
+                    <p>забронюйте номер зараз і отримайте</p>
+                    <h6><span>5% знижки</span></h6>
+                    <a href="#book" data-toggle="modal" data-target="#book" class="btn-2"><span>Забронювати номер</span></a>
+                </div>
+            </div>
+            <div class="welcome-to">
+                <div class="title">
+                    <p>ласкаво просимо до</p>
+                    <h3 class="flex-container"><span>Rivoli City Club Hotel</span></h3>
+                </div>
+                <address class="flex-container">
+                    <div class="item">
+                        <p><a href="tel:+38 (050) 38 20 222">+38 (050) 38 20 222</a></p>
+                        <p><a href="tel:+38 (068) 38 20 222">+38 (068) 38 20 222</a></p>
+                    </div>
+                    <div class="item">
+                        <p>м.Чернівці Глибоцький р-н., с.Чагор</p>
+                        <p>вул Незалежності 2</p>
+                    </div>
+                    <div class="item">
+                        <p><a href="mailto:info.rivoli.ch@gmail.com">info.rivoli.ch@gmail.com</a></p>
+                    </div>
+                </address>
+            </div>
+            <div class="map">
+                <div id="map"></div>
+                <form class="wow animated fadeInRight" id="form">
+                    <div class="position-img">
+                        <h5>Напишіть нам</h5>
+                    </div>
+                    <div class="container-form">
+                        <div class="input-container">
+                            <input type="text" name="userName" placeholder="Ім'я" required>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-container">
+                            <input type="number" min="0" placeholder="Телефон" required>
+                        </div>
+                        <div class="input-container">
+                            <textarea name="description" placeholder="Ваш коментар"></textarea>
+                        </div>
+                        <button type="submit">відправити повідомлення</button>
+                    </div>
+                </form>
+            </div>
+            <div class="copyright">
+                <div class="flex-container">
+                    <div class="left">
+                        <p>© 2017 All right reserved. Rivoli-hotel.com.ua</p>
+                    </div>
+                    <div class="border"></div>
+                    <div class="right">
+                        <p>site management by <a href="http://www.shade-designs.com.ua/" target="_blank">shade-designs.com.ua</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<div id="popupMessage">
+    <span>Message sent</span>
+</div>
+<div id="preload">
+    <div class="lds-dual-ring">
+        <div class="ring"></div>
+        <div class="ring"></div>
+    </div>
+</div>
+<!--modals ==============>-->
+<div id="book" class="modal fade in" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="head-modal">
+                <a href="#" data-dismiss="modal" class="close-modal"><img src="../img/cross.svg" alt="close"></a>
+            </div>
+            <div class="modal-body">
+                <div id="_pmsWidget_"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modals ==============>-->
+<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../js/all.min.js"></script>
+<script src="https://pmscloud.com/app/pbb/js/pmsbook.js"></script>
+<script>
+    var Pms = new _Pms('879789'),
+        params = {
+            hotelId: '879789', button: '5505024', height: 330, textColor: '#fff', backgroundColor: '#3e4f64',
+            hostname: "https://pmscloud.com/app/form"
+        };
+    Pms.widget("_pmsWidget_", params);
+</script>
+</body>
+</html>
