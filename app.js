@@ -26,14 +26,11 @@ app.use(cookieParser());
 
 app.use(stylus.middleware(path.join(__dirname, "public_admin")));
 app.use(express.static(path.join(__dirname, "public_admin")));
-
-app.use(express.static(path.join(__dirname, "rivoli")));
-
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api", api);
 app.use("/admin", admin);
-app.use("/rivoli/", rivoli);
+app.use("/rivoli", rivoli);
 app.use("/", index);
 
 // catch 404 and forward to error handler

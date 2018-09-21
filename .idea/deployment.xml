@@ -2,6 +2,20 @@
 <project version="4">
   <component name="PublishConfigData" serverName="ftp">
     <serverData>
+      <paths name="HOSTIQ">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Webhost000Webhost">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="ftp">
         <serverdata>
           <mappings>
