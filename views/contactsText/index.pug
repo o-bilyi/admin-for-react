@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+    .content
+        h2.title-page Text
+        form.users(method="post" action="/api/users-text")
+            input.title(type="text" name="title" value=contactsText[0].title autocomplete="off")
+            textarea.description(name="description"  autocomplete="off")=contactsText[0].description
+            button(type="submit", data-method="post")="change"
+        div=errors

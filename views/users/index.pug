@@ -3,12 +3,6 @@ extends ../layout
 block content
     .content
         h2.title-page Team
-        .title-and-description
-            h3.title About Us. A team inspired by the design
-            p.description
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                | labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                | laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         .users
             each user, index in users
                 form.user-container(method="post" enctype="multipart/form-data" action="/api/users")

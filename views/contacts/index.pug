@@ -2,27 +2,11 @@ extends ../layout
 block content
 	.content
 		h2.title-page Contacts
-
-		.contacts
-
-			each contact, index in contacts
-				form.contact-container(method="post" enctype="multipart/form-data" action="/api/contacts")
-					.index=index + 1
-
-		button.add-user.show-modal-form add new project
-
-	.modal-form
-		button.close-modal.show-modal-form close
-		form.submit-form.send-message(method="post" name="send" enctype="multipart/form-data" action="#")
-			.flex-container
-				.input-container
-					input(type="text", name="name", placeholder="name")
-				.input-container
-					input(type="email", name="email" placeholder="email")
-				.input-container
-					textarea(name="description")
-			.button-container
-				button(type="submit") Save
-				button(type="reset") Reset
-
+		form.users(method="post" action="/api/contacts")
+			input(type="text", value=contacts[0].email name="email" placeholder="phone")
+			input(type="text", value=contacts[0].phoneOne name="phoneOne" placeholder="phone")
+			input(type="text", value=contacts[0].phoneTwo name="phoneTwo" placeholder="phone")
+			input(type="text", value=contacts[0].facebook name="facebook" placeholder="facebook")
+			input(type="text", value=contacts[0].linked name="linked" placeholder="linked")
+			button.show-preview-button.active(type="submit") Save
 	div=errors

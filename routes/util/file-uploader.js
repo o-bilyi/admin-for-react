@@ -26,7 +26,6 @@ function uploadFile(req) {
     .on("file", function (field, file) {
         if (fs.existsSync(file.path)) {
             fieldForm[field] = fieldForm.id + "-" + file.name;
-            // fs.renameSync(file.path, form.uploadDir + "/" +  fieldForm.id + "-" + filename);
         }
     })
     .on('fileBegin', function (name, file) {

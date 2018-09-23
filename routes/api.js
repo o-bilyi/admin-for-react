@@ -21,8 +21,24 @@ router.route("/users")
         const id = request.body.id;
         const deletedElem = db.allData.users.find(i => i.id === id);
         deleteImages(deletedElem.img, deletedElem.previewImg).then(() => {
-            db.removeUser(id).then(() =>  response.send('ok'));
+            db.removeUser(id).then(() => response.send('ok'));
         });
+    });
+
+router.route("/users-text")
+    .get(function (req, res) {
+        res.send(db.allData.usersText);
+    })
+    .post((req, res) => {
+        db.setUsersText(req.body).then(
+            () => {
+                if (res) {
+                    res.redirect("/admin/users-text")
+                } else {
+                    res.redirect("/admin/users-text")
+                }
+            }
+        )
     });
 
 router.route("/projects")
@@ -42,8 +58,56 @@ router.route("/projects")
         const id = request.body.id;
         const deletedElem = db.allData.projects.find(i => i.id === id);
         deleteImages(deletedElem.img, deletedElem.previewImg).then(() => {
-            db.removeProject(id).then(() =>  response.send('ok'));
+            db.removeProject(id).then(() => response.send('ok'));
         });
+    });
+
+router.route("/projects-text")
+    .get(function (req, res) {
+        res.send(db.allData.projectsText);
+    })
+    .post((req, res) => {
+        db.setProjectsText(req.body).then(
+            () => {
+                if (res) {
+                    res.redirect("/admin/projects-text")
+                } else {
+                    res.redirect("/admin/projects-text")
+                }
+            }
+        )
+    });
+
+router.route("/contacts")
+    .get((req, res) => {
+        res.send(db.allData.contacts);
+    })
+    .post((req, res) => {
+        db.setContact(req.body).then(
+            () => {
+                if (res) {
+                    res.redirect("/admin/contacts")
+                } else {
+                    res.redirect("/admin/contacts")
+                }
+            }
+        )
+    });
+
+router.route("/contacts-text")
+    .get(function (req, res) {
+        res.send(db.allData.contactsText);
+    })
+    .post((req, res) => {
+        db.setContactsText(req.body).then(
+            () => {
+                if (res) {
+                    res.redirect("/admin/contacts-text")
+                } else {
+                    res.redirect("/admin/contacts-text")
+                }
+            }
+        )
     });
 
 router.route("/posts")
@@ -67,53 +131,40 @@ router.route("/posts")
         });
     });
 
-router.route("/contacts")
-    .get((req, res) => {
-      res.send(db.allData.contacts);
-    })
-    .post((req, res) => {
-      uploader(req).then(result => {
-        db.setContact(result);
-        res.redirect("/admin/contacts");
-      }).catch(e => {
-        console.warn(e);
-        res.redirect("/admin/contacts", {errors: "some error"});
-      });
-    });
 
 router.route("/sendMessage")
-  .post((req, res) => {
-    new Promise( (result, reject) => {
-      let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        secure: false,
-        port: 25,
-        auth: {
-          user: 'beluy845@gmail.com',
-          pass: 'beluy625436',
-        },
-        tls: {
-          rejectUnauthorized: false
-        }
-      });
-      let mailOptions = {
-        from: "Messages on Node server",
-        to: "o.d.bilyi@gmail.com",
-        subject: "New Messages",
-        text: `
+    .post((req, res) => {
+        new Promise((result, reject) => {
+            let transporter = nodemailer.createTransport({
+                service: 'gmail',
+                secure: false,
+                port: 25,
+                auth: {
+                    user: 'beluy845@gmail.com',
+                    pass: 'beluy625436',
+                },
+                tls: {
+                    rejectUnauthorized: false
+                }
+            });
+            let mailOptions = {
+                from: "Messages on Node server",
+                to: "o.d.bilyi@gmail.com",
+                subject: "New Messages",
+                text: `
         user : ${req.body.user}
         email: ${req.body.email}
         site: ${req.body.site}`
-      };
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return reject(error);
-        }
-        console.log('Email sent: ' + info.response);
-        res.send("ok");
-        result(true);
-      });
-    })
-  });
+            };
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    return reject(error);
+                }
+                console.log('Email sent: ' + info.response);
+                res.send("ok");
+                result(true);
+            });
+        })
+    });
 
 module.exports = router;
