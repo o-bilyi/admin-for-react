@@ -2,11 +2,11 @@ extends ../layout
 block content
 	.content
 		h2.title-page Contacts
-		form.users(method="post" action="/api/contacts")
+		form.text-page(method="post" action="/api/contacts")
 			input(type="text", value=contacts[0].email name="email" placeholder="phone")
 			input(type="text", value=contacts[0].phoneOne name="phoneOne" placeholder="phone")
 			input(type="text", value=contacts[0].phoneTwo name="phoneTwo" placeholder="phone")
 			input(type="text", value=contacts[0].facebook name="facebook" placeholder="facebook")
 			input(type="text", value=contacts[0].linked name="linked" placeholder="linked")
-			button.show-preview-button.active(type="submit") Save
+			button.add-user(type="submit") Save
 	div=errors

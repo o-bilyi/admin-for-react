@@ -37,7 +37,7 @@ h1
 .content
   background-color #3b3b3b
   width 100%
-  padding 50px 15px 30px 0
+  padding 50px 15px 30px
   box-shadow 0 0 8px 0 rgba(35, 35, 35, 0.3)
   position relative
 
@@ -168,6 +168,28 @@ h1
 img
   max-width 100%
 
+.text-page
+  input,textarea
+    width 100%
+    border none
+    resize none
+    outline none
+    color #595959
+    font-size 14px
+    font-weight 300
+    min-height 25px
+    margin-bottom 20px
+    padding-bottom 10px
+    transition-duration 0.3s
+    background-color transparent
+    border-bottom 1px solid #595959
+    transition-property color, border-bottom-color
+
+    &:hover, &:focus
+      color #fff
+      border-bottom-color #fff
+
+
 .index
   display flex
   align-items center
@@ -214,9 +236,8 @@ img
   height 50%
 
 .users
-  max-height 650px
   overflow-y auto
-  padding: 3px 3px 3px 18px
+  max-height 650px
   margin-bottom 40px
 
   .user-container
@@ -538,7 +559,7 @@ img
     padding 100px 10px 0 0
 
   .content
-    padding 10px 15px 15px 0
+    padding 10px 15px 15px
 
   .users
     margin-bottom 15px
