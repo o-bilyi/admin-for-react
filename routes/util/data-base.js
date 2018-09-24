@@ -40,8 +40,7 @@ const setData = (to, data) => {
 
 const setText = (to, data) => {
     return new Promise((res, rej) => {
-        allData[to] = [];
-        allData[to].push(data);
+        allData[to] = [data];
         jsonFile.writeFile(fileLinks[`${to}File`], allData[to], {spaces: 2}, (err) => {
             if (err) {
                 rej(err)
