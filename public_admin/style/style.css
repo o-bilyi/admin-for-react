@@ -168,6 +168,12 @@ h1 {
 img {
   max-width: 100%;
 }
+.text-page .title-section {
+  color: #595959;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
 .text-page input,
 .text-page textarea {
   width: 100%;

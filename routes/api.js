@@ -25,22 +25,6 @@ router.route("/users")
         });
     });
 
-router.route("/users-text")
-    .get(function (req, res) {
-        res.send(db.allData.usersText);
-    })
-    .post((req, res) => {
-        db.setUsersText(req.body).then(
-            () => {
-                if (res) {
-                    res.redirect("/admin/users-text")
-                } else {
-                    res.redirect("/admin/users-text")
-                }
-            }
-        )
-    });
-
 router.route("/projects")
     .get((req, res) => {
         res.send(db.allData.projects);
@@ -62,22 +46,6 @@ router.route("/projects")
         });
     });
 
-router.route("/projects-text")
-    .get(function (req, res) {
-        res.send(db.allData.projectsText);
-    })
-    .post((req, res) => {
-        db.setProjectsText(req.body).then(
-            () => {
-                if (res) {
-                    res.redirect("/admin/projects-text")
-                } else {
-                    res.redirect("/admin/projects-text")
-                }
-            }
-        )
-    });
-
 router.route("/contacts")
     .get((req, res) => {
         res.send(db.allData.contacts);
@@ -89,22 +57,6 @@ router.route("/contacts")
                     res.redirect("/admin/contacts")
                 } else {
                     res.redirect("/admin/contacts")
-                }
-            }
-        )
-    });
-
-router.route("/contacts-text")
-    .get(function (req, res) {
-        res.send(db.allData.contactsText);
-    })
-    .post((req, res) => {
-        db.setContactsText(req.body).then(
-            () => {
-                if (res) {
-                    res.redirect("/admin/contacts-text")
-                } else {
-                    res.redirect("/admin/contacts-text")
                 }
             }
         )
@@ -131,6 +83,21 @@ router.route("/posts")
         });
     });
 
+router.route("/texts")
+    .get((req, res) => {
+        res.send(db.allData.texts)
+    })
+    .post((req, res) => {
+        db.setTexts(req.body).then(
+            () => {
+                if (res) {
+                    res.redirect("/admin/texts")
+                } else {
+                    res.redirect("/admin/texts")
+                }
+            }
+        )
+    });
 
 router.route("/sendMessage")
     .post((req, res) => {

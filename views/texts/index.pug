@@ -1,0 +1,39 @@
+extends ../layout
+
+block content
+    .content
+        h2.title-page Texts
+        each item in texts
+            form.text-page(method="post" action="/api/texts")
+                .users-page
+                    h2.title-section Users page
+                    input.title(type="text" name="usersTitle" value=item.usersTitle autocomplete="off" placeholder="title")
+                    input.title(type="text" name="usersSubTitle" value=item.usersSubTitle autocomplete="off" placeholder="sub title")
+                    textarea.user-description-textarea(name="usersDescription"  autocomplete="off")=item.usersDescription
+
+                .projects-page
+                    h2.title-section Projects page
+                    input.title(type="text" name="projectsTitle" value=item.projectsTitle autocomplete="off" placeholder="title")
+                    input.title(type="text" name="projectsSubTitle" value=item.projectsSubTitle autocomplete="off" placeholder="sub title")
+                    textarea.user-description-textarea(name="projectsDescription"  autocomplete="off")=item.projectsDescription
+
+                .contacts-page
+                    h2.title-section Contacts page
+                    input.title(type="text" name="contactsTitle" value=item.contactsTitle autocomplete="off" placeholder="title")
+                    input.title(type="text" name="contactsSubTitle" value=item.contactsSubTitle autocomplete="off" placeholder="sub title")
+                    textarea.user-description-textarea(name="contactsDescription"  autocomplete="off")=item.contactsDescription
+
+                .contact-form
+                    h2.title-section Contact form
+                    input.title(type="text" name="contactFormTitle" value=item.contactFormTitle autocomplete="off" placeholder="title")
+                    input.title(type="text" name="contactFormName" value=item.contactFormName autocomplete="off" placeholder="name label")
+                    input.title(type="text" name="contactFormSite" value=item.contactFormSite autocomplete="off" placeholder="site label")
+                    input.title(type="text" name="contactFormEmail" value=item.contactFormEmail autocomplete="off" placeholder="email label")
+                    input.title(type="text" name="contactFormButton" value=item.contactFormButton autocomplete="off" placeholder="button text")
+
+                .copyright-block
+                    h2.title-section Copyright
+                    input.title(type="text" name="copyrightTitle" value=item.copyrightTitle autocomplete="off" placeholder="title")
+
+                button.add-user(type="submit") Save
+        div=errors
