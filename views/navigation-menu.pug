@@ -1,0 +1,12 @@
+-nav = ["users","projects","contacts","blog","texts"];
+
+ul.global-menu
+
+    li.logo-container
+        a(href="/")
+            img.logo(src="../img/logo.svg")
+        p.description-logo Dashboard
+
+    each item in nav
+        li.menu-item(data-name=`/admin/${item}`)
+            a.link-menu(href=`/admin/${item}`)=item

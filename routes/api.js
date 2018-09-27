@@ -99,6 +99,20 @@ router.route("/texts")
         )
     });
 
+router.route("/admin/login")
+    .post((req, res) => {
+        console.warn(req);
+
+        const name = req.body.name;
+        const password = req.body.password;
+
+        if(name === "alex" && password === 123) {
+            res.redirect("/admin")
+            localStorage.setItem("login");
+        }
+        res.redirect("/admin")
+    })
+
 router.route("/sendMessage")
     .post((req, res) => {
         new Promise((result, reject) => {
