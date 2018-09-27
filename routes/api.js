@@ -4,6 +4,28 @@ const router = require("express").Router();
 const uploader = require("./util/file-uploader");
 const deleteImages = require("./util/delete-image");
 
+// Buffer.from("seq123").toString(typeEncrypt); example in Buffer.from('Hello World!').toString('base64') out Buffer.from(b64Encoded, 'base64').toString()
+
+let key = null;
+const cookieName = "cookieName";
+const typeEncrypt = "base64";
+
+const userName = "alex";
+const userPassword = "123";
+
+router.route('/login').post((req, res) => {
+  const name = req.body.name;
+  const password = req.body.password;
+
+  if (name === userName && password === userPassword) {
+    key = Buffer.from("seq123").toString(typeEncrypt);
+    res.cookie(cookieName, key, { maxAge: 300000, httpOnly: true });
+    res.status(200).render("index");
+    return;
+  }
+  res.status(401).redirect('/admin');
+});
+
 router.route("/users")
     .get(function (req, res) {
         res.send(db.allData.users);
@@ -98,20 +120,6 @@ router.route("/texts")
             }
         )
     });
-
-router.route("/admin/login")
-    .post((req, res) => {
-        console.warn(req);
-
-        const name = req.body.name;
-        const password = req.body.password;
-
-        if(name === "alex" && password === 123) {
-            res.redirect("/admin")
-            localStorage.setItem("login");
-        }
-        res.redirect("/admin")
-    })
 
 router.route("/sendMessage")
     .post((req, res) => {

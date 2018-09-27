@@ -180,7 +180,7 @@ img {
   border: none;
   resize: none;
   outline: none;
-  color: #595959;
+  color: #737373;
   font-size: 14px;
   font-weight: 300;
   min-height: 25px;
@@ -273,7 +273,7 @@ img {
 }
 .users input,
 .users .user-description-textarea {
-  color: #595959;
+  color: #737373;
   background-color: transparent;
   border: none;
   resize: none;
@@ -518,7 +518,7 @@ img {
   padding-bottom: 10px;
   transition-duration: 0.3s;
   transition-property: color, border-bottom-color;
-  color: #595959;
+  color: #737373;
   background-color: transparent;
   resize: none;
   height: 25px;
@@ -546,6 +546,12 @@ img {
 }
 .projects .project-preview-image {
   margin-top: 10px;
+}
+.login-form-wrap {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 @media all and (max-width: 1800px) {
   .global-menu {
