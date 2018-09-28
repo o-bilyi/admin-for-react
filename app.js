@@ -25,8 +25,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(stylus.middleware(path.join(__dirname, "public_admin")));
-app.use(express.static(path.join(__dirname, "public_admin")));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public_admin"), {maxAge : 86400000}));
+app.use(express.static(path.join(__dirname, "public"), {maxAge : 86400000}));
 
 app.use("/api", api);
 app.use("/admin", admin);
