@@ -10,8 +10,6 @@ const app = express();
 const api = require("./routes/api");
 const admin = require("./routes/admin");
 const index = require("./routes/index");
-const rivoli = require("./routes/rivoli");
-
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -30,7 +28,6 @@ app.use(express.static(path.join(__dirname, "public"), {maxAge : 86400000}));
 
 app.use("/api", api);
 app.use("/admin", admin);
-app.use("/rivoli", rivoli);
 app.use("/", index);
 
 // catch 404 and forward to error handler
