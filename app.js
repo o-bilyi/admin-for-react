@@ -7,6 +7,8 @@ const stylus = require("stylus");
 const path = require("path");
 const app = express();
 
+require("dotenv").config();
+
 const api = require("./routes/api");
 const admin = require("./routes/admin");
 const index = require("./routes/index");
